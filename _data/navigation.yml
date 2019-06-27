@@ -1,0 +1,9 @@
+- name: Home
+  link: /
+- name: CV
+  link: / 
+- name: Research
+  link: /
+- name: Blog
+  link: /
+  
