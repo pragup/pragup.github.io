@@ -1,9 +1,22 @@
-- name: Home
-  link: /
-- name: CV
-  link: / 
-- name: Research
-  link: /
-- name: Blog
-  link: /
-  
+# main links links
+main:
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Talks"
+    url: /talks/    
+
+  - title: "Teaching"
+    url: /teaching/    
+    
+  - title: "Portfolio"
+    url: /portfolio/
+        
+  - title: "Blog Posts"
+    url: /year-archive/
+    
+  - title: "CV"
+    url: /cv/
+    
+  - title: "Guide"
+    url: /markdown/
