@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Prashant Gupta"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Doctoral student in Applied Mathematics under Department of Mathematics and Statistics at Washington State University." 
+#  location         : "Location"
   employer         :
 #  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
 #  googlescholar    : "http://yourfullgooglescholarurl.com"
