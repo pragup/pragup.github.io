@@ -9,51 +9,50 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+EDUCATION
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* M.S. in Simulation Based Mechanical Engineering Science, University of Colorado, Boulder, 2014
+* Ph.D in Applied Mathematics, Washington State University, 2020 (expected)
 
-Work experience
+EXPERIENCE
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Washington State University                                                                                                                                                Pullman, WA
+* Graduate Researcher								                                                                                                                         May 2016 - present	
+* Developing efficient and scalable algorithms for tool path planning in additive manufacturing (AM) using combinatorial topology and discrete optimization.
+* Developed novel mathematical theory and scalable algorithms to generate continuous tool path with no crossover for any arbitrary partial fill problem in AM. Developed a unique framework to integrate it with AM. (Manuscript in preparation)
+    
+* Oak Ridge National Laboratory (ORNL)                                                                                                                                       Knoxville, TN  
+* Research Collaboration                                                                                                                                                     May 2019 – present
+* Developing multi-robot additive manufacturing framework to reduce print time and failures, jointly with researchers from MIT and ORNL.
+ 
+* Oak Ridge National Laboratory (ORNL)                                                                                                                                       Knoxville, TN  
+* Research Intern                                                                                                                                                            Jun 2017 - Dec 2017 
+* Developed an optimal tool path traversal algorithm based on Traveling salesman problem (TSP) for any dense fill problem in AM. Implemented these algorithms in Python and C++, using CPLEX Python and C++ API. Further, effects of mechanical parameter of AM on tool path is jointly investigated with researchers MIT and ORNL (Manuscript in preparation).    
+* Developed a Python module to do Euler Transformation of any arbitrary infill lattice. 
+* Testing and integrating variable density hexagonal meshing library in C++ for ORNL SLICER 2.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
+* Oak Ridge National Laboratory (ORNL)                                                                                                                                       Knoxville, TN  
+* Research Intern                                                                                                                                                            May 2018 - Aug 2018 
+* Integrated Triangle mesh generator library in C++ with ORNL SLICER 2. 
+* Developed C++ module to do Euler transformation of Triangle mesh and integrated it with ORNL SLICER 2. 
+
+* Washington State University                                                                                                                                                Richland, WA
+* Graduate Research                         					                                                                                                             Jan 2015 – May 2016
+* Developed a C++ module in lammps from scratch for nanoscale fluids, works for both shared memory and distributed shared memory systems. 
+* Developed a C++ tool that captures 3D geometry projections on any plane in 3D during simulation in lammps and a C tool to handle pre and post processing for lammps involving multiple formats. 
+
+* NEi Software                                                                                                                                                               Westminster, CA                                                                                                                    
+* Finite Element Analysis intern                                                                                                                                             May 2013 - Aug 2013
+* Testing and developing NEi Nastran non-linear optimization solver written in C++.  
+* Integrated and tested a non-linear optimization solver, IPOPT to NEi Nastran that gives better performance in terms of checkerboard and symmetry of design when forces are symmetric.   
+
+TECHNICAL SKILLS
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Packages: Open MP, open MPI, SciPy, NumPy, pandas, Pyspark, Cplex, lpsolve, Caffe, TensorFlow   
 
-Publications
+PUBLICATIONS
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
