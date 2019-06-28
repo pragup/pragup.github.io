@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Prashant Gupta"
   avatar           : "profile.png"
-  bio              : "Doctoral student in Applied Mathematics under Department of Mathematics and Statistics at Washington State University." 
+  bio              : "Doctoral student in Applied Mathematics under Department of Mathematics and Statistics at Washington State University, Pullman." 
 #  location         : "Location"
   employer         :
 #  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -176,13 +176,13 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
     output: true
