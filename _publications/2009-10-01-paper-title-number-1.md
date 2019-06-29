@@ -1,5 +1,5 @@
 ---
-title: "Paper Title Number 1"
+title: "Euler Transformation of Polyhedral Complexes"
 collection: publications
 permalink: /publication/2018-12-06-Euler-Transformation-of-Polyhedral-Complexes
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
