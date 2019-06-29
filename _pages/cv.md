@@ -18,7 +18,7 @@ EXPERIENCE
 ======
 * **Washington State University**
 * Graduate Researcher, *May 2016 - present*	
-* Developing efficient and scalable algorithms for tool path planning in additive manufacturing (AM) using combinatorial topology and discrete optimization.
+* Developing efficient and scalable algorithms for tool path planning in additive manufacturing (AM) using *combinatorial topology and discrete optimization*.
 * Developed novel mathematical theory and scalable algorithms to generate continuous tool path with no crossover for any arbitrary partial fill problem in AM. Developed a unique framework to integrate it with AM. (Manuscript in preparation)
     
 * **Oak Ridge National Laboratory (ORNL)**  
@@ -27,28 +27,34 @@ EXPERIENCE
  
 * **Oak Ridge National Laboratory (ORNL)**   
 * Research Intern, *Jun 2017 - Dec 2017* 
-* Developed an optimal tool path traversal algorithm based on Traveling salesman problem (TSP) for any dense fill problem in AM. Implemented these algorithms in Python and C++, using CPLEX Python and C++ API. Further, effects of mechanical parameter of AM on tool path is jointly investigated with researchers from MIT and ORNL (Manuscript in preparation).    
-* Developed a Python module to do Euler Transformation of any arbitrary infill lattice. 
-* Testing and integrating variable density hexagonal meshing library in C++ for ORNL SLICER 2.
+* Developed an optimal tool path traversal algorithm based on Traveling salesman problem (TSP) for any dense fill problem in AM. Implemented these algorithms in **Python** and **C++**, using CPLEX Python and C++ API. Further, effects of mechanical parameter of AM on tool path is jointly investigated with researchers from MIT and ORNL (Manuscript in preparation).    
+* Developed a **Python** module to do Euler Transformation of any arbitrary infill lattice. 
+* Testing and integrating variable density hexagonal meshing library in **C++** for ORNL SLICER 2.
 
 * **Oak Ridge National Laboratory (ORNL)**
 * Research Intern, *May 2018 - Aug 2018* 
-* Integrated Triangle mesh generator library in C++ with ORNL SLICER 2. 
-* Developed C++ module to do Euler transformation of Triangle mesh and integrated it with ORNL SLICER 2. 
+* Integrated Triangle mesh generator library in **C++** with ORNL SLICER 2. 
+* Developed **C++** module to do Euler transformation of Triangle mesh and integrated it with ORNL SLICER 2. 
 
 * **Washington State University** 
 * Graduate Research, *Jan 2015 – May 2016*
-* Developed a C++ module in lammps from scratch for nanoscale fluids, works for both shared memory and distributed shared memory systems. 
-* Developed a C++ tool that captures 3D geometry projections on any plane in 3D during simulation in lammps and a C tool to handle pre and post processing for lammps involving multiple formats. 
+* Developed a **C++** module in lammps from scratch for nanoscale fluids, works for both shared memory and distributed shared memory systems. 
+* Developed a **C++** tool that captures 3D geometry projections on any plane in 3D during simulation in lammps and a **C** tool to handle pre and post processing for lammps involving multiple formats. 
 
 * **NEi Software**, Westminster, CA                                                                                                                    
 * Finite Element Analysis intern, *May 2013 - Aug 2013*
-* Testing and developing NEi Nastran non-linear optimization solver written in C++.  
+* Testing and developing NEi Nastran non-linear optimization solver written in **C++**.  
 * Integrated and tested a non-linear optimization solver, IPOPT to NEi Nastran that gives better performance in terms of checkerboard and symmetry of design when forces are symmetric.   
 
 TECHNICAL SKILLS
 ======
 * Packages: Open MP, open MPI, SciPy, NumPy, pandas, Pyspark, Cplex, lpsolve, Caffe, TensorFlow   
+
+PROJECTS
+====
+**Text Classification using Convolution Neural Network (CNN)**: Implemented CNN for sentimental analysis of Text data in **Python** using TensorFlow and evaluated on Movie Review Data set on Kaggle with accuracy 62.187% , ranked me in top 300(post competition). 
+**Letter recognition using Artificial Neural network (ANN)**: Implemented a scalable binary classification algorithm in **Matlab** using ANN with one hidden layer, on UCI dataset of English letters with accuracy of 93.9% compared to original paper with 80% accuracy. 
+**Topological Data Analysis using Mapper algorithm**: Implemented Mapper algorithm in **Python** for detecting some topological information such as flares that cannot be identified by a standard principal component analysis. 
 
 PUBLICATIONS
 ======
