@@ -2,7 +2,7 @@
 title: "Euler Transformation of Polyhedral Complexes"
 collection: publications
 permalink: /publication/2018-12-06-Euler-Transformation-of-Polyhedral-Complexes
-excerpt: 'We have developed an Euler Transformation algorithm that transforms an arbitrary planar graph G(i.e in R^2) to a planar graph G'=(V', E') where every vertex in V' has even degree. We have shown that this transformation preserve geometry and topology of the domain. Further, we also proved that mesh quality of G' is at most a constant factor off from the quality of G. As an immediate next step, we will extend the Euler transformation algorithm to arbitrary graph in R^3.'
+excerpt: 'We have developed an Euler Transformation algorithm that transforms an arbitrary planar graph G(i.e in R^2) to a planar graph Gp=(Vp, Ep) where every vertex in Vp has even degree. We have shown that this transformation preserve geometry and topology of the domain. Further, we also proved that mesh quality of Gp is at most a constant factor off from the quality of G. As an immediate next step, we will extend the Euler transformation algorithm to arbitrary graph in R^3.'
 date: 2018-12-06
 venue: 'CoRR'
 paperurl: 'https://arxiv.org/pdf/1812.02412.pdf'
