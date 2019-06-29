@@ -27,7 +27,7 @@ EXPERIENCE
  
 * **Oak Ridge National Laboratory (ORNL)**   
 * Research Intern, *Jun 2017 - Dec 2017* 
-* Developed an optimal tool path traversal algorithm based on Traveling salesman problem (TSP) for any dense fill problem in AM. Implemented these algorithms in **Python** and **C++**, using CPLEX Python and C++ API. Further, effects of mechanical parameter of AM on tool path is jointly investigated with researchers from MIT and ORNL (Manuscript in preparation).    
+* Developed an optimal tool path traversal algorithm based on Traveling salesman problem (TSP) for any dense fill problem in AM. Implemented these algorithms in **Python** and **C++**, using **CPLEX Python and C++ API**. Further, effects of mechanical parameter of AM on tool path is jointly investigated with researchers from MIT and ORNL (Manuscript in preparation).    
 * Developed a **Python** module to do Euler Transformation of any arbitrary infill lattice. 
 * Testing and integrating variable density hexagonal meshing library in **C++** for ORNL SLICER 2.
 
@@ -52,13 +52,23 @@ TECHNICAL SKILLS
 
 PROJECTS
 ====
-**Text Classification using Convolution Neural Network (CNN)**: Implemented CNN for sentimental analysis of Text data in **Python** using TensorFlow and evaluated on Movie Review Data set on Kaggle with accuracy 62.187% , ranked me in top 300(post competition). 
-**Letter recognition using Artificial Neural network (ANN)**: Implemented a scalable binary classification algorithm in **Matlab** using ANN with one hidden layer, on UCI dataset of English letters with accuracy of 93.9% compared to original paper with 80% accuracy. 
-**Topological Data Analysis using Mapper algorithm**: Implemented Mapper algorithm in **Python** for detecting some topological information such as flares that cannot be identified by a standard principal component analysis. 
+* **Text Classification using Convolution Neural Network (CNN)**: Implemented CNN for sentimental analysis of Text data in **Python** using TensorFlow and evaluated on Movie Review Data set on Kaggle with accuracy 62.187% , ranked me in top 300(post competition). 
+* **Letter recognition using Artificial Neural network (ANN)**: Implemented a scalable binary classification algorithm in **Matlab** using ANN with one hidden layer, on UCI dataset of English letters with accuracy of 93.9% compared to original paper with 80% accuracy. 
+* **Topological Data Analysis using Mapper algorithm**: Implemented Mapper algorithm in **Python** for detecting some topological information such as flares that cannot be identified by a standard principal component analysis. 
 
 PUBLICATIONS
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
+EDUCATION
+====
+**Washington State University** 
+* PhD in Applied Mathematics, Jan 2015 - present
+* **Relevant Coursework**: Non-Linear optimization I (Unconstrained Optimization), Network Optimization, Advanced Matrix Computations, Integer and combinatorial optimization, Structured prediction, Artificial Neural Network, Deep Learning, Bayesian Analysis, Distributed systems concept and programming, Parallel Computing, Computational Topology 
+
+**University of Colorado at Boulder**
+* MS in Simulation based Mechanical Engineering Science, Aug 2012 - Dec 2014
+* Relevant Coursework: Numerical Methods, Applied Mathematics I, Applied Mathematics II, Markov processes, Queues, and Monte Carlo simulations.
   
