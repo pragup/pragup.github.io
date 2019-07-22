@@ -24,7 +24,8 @@ BACKGROUND
     * Common sense reasoning is pre-required.
 
 ### Word Embedding(or Word Vectors) – ###
-* **Discrete representation-** The vast majority of statistical NLP work regards, words as atomic symbols: hotel, conference, motel . In vector space terms, this is a vector with one 1 and everything else is zeroes.\
+* **Discrete representation-** The vast majority of statistical NLP work regards, words as atomic symbols: hotel, conference, motel . In vector space terms, this is a vector with one 1 and everything else is zeroes.
++
 Every word is orthogonal to one another like 𝑤_ℎ𝑜𝑡𝑒𝑙 . 𝑤_𝑚𝑜𝑡𝑒𝑙  =0. Hence word similarity is not captured. Representing words as atomic symbols, leads to data sparsity, and usually means that we may need more data in \
 order to successfully train statistical models.
 * **Continuous representation-** We can embed words in 𝑅^𝐷 with D≤V such that semantically close words are likewise `close' in 𝑅^𝐷. It will capture distributional similarity. One of the most successful ideas of modern\
