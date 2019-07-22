@@ -33,7 +33,7 @@ statistical NLP.
 	scales quadratically for D×𝑉 matrix: O(𝐷𝑉^2) flops. Bad for millions of words or documents. Hard to incorporate new words or documents. 
 * **Direct prediction Models–** Here the idea is directly learning lower vector representation. For example: Feed forward neural language model, recurrent neural language model, Log-Linear language model \
 (Continuous bag of words model, Continuous skip gram model). One of the most popular one is word2vec which based on Log-Linear language model. Word2vec instead of capturing co-occurrence counts directly, \
-it predicts surrounding words of every word Fig.1 ![Test Figure 1](../images/Sentence-Classification-Figure_1.png). Word2vec representation is pretty good in capturing syntactic  and semantic relationship between words like: \
+it predicts surrounding words of every word Fig.1 ![Test Figure 1](https://github.com/pragup/pragup.github.io/blob/master/images/Sentence-Classification-Figure_1.png). Word2vec representation is pretty good in capturing syntactic  and semantic relationship between words like: \
 𝑤_𝑏𝑖𝑔−𝑤_𝑏𝑖𝑔𝑔𝑒𝑟  ≈𝑤_𝑠𝑙𝑜𝑤−𝑤_𝑠𝑙𝑜𝑤𝑒𝑟, 𝑤_𝑓𝑟𝑎𝑛𝑐𝑒−𝑤_𝑝𝑎𝑟𝑖𝑠≈𝑤_𝑘𝑜𝑟𝑒𝑎−𝑤_𝑠𝑒𝑜𝑢𝑙. But not necessarily unique.
 
 
