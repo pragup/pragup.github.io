@@ -7,13 +7,11 @@ tags:
   - category1
   - category2
 ---
-ABSTRACT
-----------
+## ABSTRACT ##
 Convolution Neural Networks are typically used in computer vision problems like image classification. Most of the computer vision systems todays at its core are based on CNNs from photo tagging to self driving cars. 
 However we are going to look at the application of CNNs in NLP(Natural Language Processing).
 
-BACKGROUND
-----------
+## BACKGROUND ##
 
 ### Natural Language Processing ###
 * Natural language is designed to make human communication efficient. As a result,
@@ -37,5 +35,14 @@ The for me easiest way to understand a convolution is by thinking of it as a s
 Neural Networks receive an input, and transform it through a series of hidden layers as shown in Figure 3. Each hidden layer is made up of a set of neurons, where each neuron is fully connected to all neurons in the previous layer. The last fully-connected layer is called the “output layer” and in classification settings it represents the class scores.
 ![First Figure 3]( https://pragup.github.io/images/neural_network_Figure_3.png )
 
-Aren't headings cool?
-------
+## Convolution Neural Network ##
+
+Simple CNN is a sequence of layers, and every layer of a CNN transforms one volume of activations to another through a differentiable function.
+
+### CNN LAYERS ###
+* **Input Layer -** It is an input data like INPUT [$32\times 32 \times 3$] that will hold the raw pixel values of the image, in this case an image of width $32$, height $32$, and with three color channels R,G,B.
+* **Convolution Layer -** It will compute the output of neurons that are connected to local regions in the input, each computing a dot product between their weights and a small region they are connected to in the input volume. This may result in volume such as [$32 \times 32 \times 12$] if we decided to use 12 filters.
+* **Activation layer -**  It will apply an elementwise activation function, such as the $max(0,x)$ thresholding at zero. This leaves the size of the volume unchanged ([$32 \times 32 \times 12$]).
+* **Pooling Layer -** It will perform a down sampling operation along the spatial dimensions (width, height), resulting in volume such as [$16 \times 16 \times 12$]. 
+* **Fully Connected Layer-** FC (i.e. fully-connected) layer will compute the class scores, resulting in output layer. volume of size [$1 \times 1 \times 10$], where each of the $10$ numbers correspond to a class score.
+* **Output Layer –** It contains score for each class such as volume of size [$1 \times 1 \times 10$], where each of the $10$ numbers correspond to a class score.
