@@ -48,3 +48,17 @@ Simple CNN is a sequence of layers, and every layer of a CNN transforms one volu
 * **Output Layer –** It contains score for each class such as volume of size [$1 \times 1 \times 10$], where each of the $10$ numbers correspond to a class score.
 
 ## METHOD ##
+* Word Vector : $x_i \in R^k$
+* Sentence :  $x_{1:n} = x_1 \oplus x_2 \oplus ....... \oplus x_n$ (vector concatenated).
+* Concatenation of the words in the range : $x_{i:i+j}$
+* Convolutional filter : $w \in R^{hk}$( goes over windows of h words)
+* h could be 2 or higher :
+* Filter $w$ is applied to all possible windows of concatenated vectors.
+* All possible windows of length h $: \{x_{1:h}, x_{2:h+1}, ..... , x_{n - h + 1 : n}\}$.
+* Results is a features map  $: c = [c_1, c_2, ....... , c_{n - h + 1}] \in R^{n - h + 1}$
+* New building block : pooling 
+	* In particular max-over-time pooling layer. In general max pooling are applied to 2D feature plane like CNN computer vision task where as  max pooling over time  is applied to 1D feature vector like NLP. 
+	* Idea: captures most important activation (maximum over time).
+	* From feature map $c \in R^{n - h + 1}$ pooled single number: $\hat{c} = max \{c\}$
+	* Since we want more features use maximum filter weights $w$.
+	* It is useful to have different window sizes $h$.
