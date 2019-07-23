@@ -62,3 +62,5 @@ Simple CNN is a sequence of layers, and every layer of a CNN transforms one volu
 	* From feature map $c \in R^{n - h + 1}$ pooled single number: $\hat{c} = max \{c\}$
 	* Since we want more features use maximum filter weights $w$.
 	* It is useful to have different window sizes $h$.
+	
+![First Figure 4](https://pragup.github.io/images/CNN_Sentence_Classification_Example.png)
