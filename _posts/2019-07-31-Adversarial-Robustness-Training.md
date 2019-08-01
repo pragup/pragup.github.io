@@ -11,4 +11,5 @@ tags:
 Neural network consistently misbehave on adversarial examples (input examples formed by little perturbation to examples from dataset such that perturbed examples output incorrect answers with high confidence. )
 
 ## Related Work ##
-Szegedy et al {% reference SzZaSuBrErGoFe2014 --file /_citations/machinelearning.bib %}
+Szegedy et al [SzZaSuBrErGoFe2014]
+[SzZaSuBrErGoFe2014]: Szegedy et al, 2014.Intriguing properties of neural networks. Available at: [https://arxiv.org/abs/1312.6199]
