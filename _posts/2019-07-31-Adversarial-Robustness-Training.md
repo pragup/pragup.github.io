@@ -11,7 +11,9 @@ tags:
 Neural network consistently misbehave on adversarial examples (input examples formed by little perturbation to examples from dataset such that perturbed examples output incorrect answers with high confidence. )
 
 ## Related Work ##
-Szegedy et al [^SzZaSuBrErGoFe2014]
+Szegedy et al[^SzZaSuBrErGoFe2014] discovered that various machine learning algorithm incluing neural network misbehave with adversarial examples. It was observed that various type of models with different 
+architecture misclassify same set of adversarial examples. Neural network in general can achieve high performance in supervised learning through backpropagation making it hard to interpretate and can have
+counter intuitive properties. Two of these properties are dicussed in this paper[^SzZaSuBrErGoFe2014].  
 
 
 
