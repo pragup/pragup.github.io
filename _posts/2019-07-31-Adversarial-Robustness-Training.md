@@ -18,8 +18,8 @@ First property is related to semantic meaning of each unit. An example of semant
 , Matthew et al[^ZeFe2013] to show semantic meaning of any unit by finding an input that maximally activate a given unit. It is based on an underlying implicit assumption that units from last layer form 
 distinguished basis for extracting semantics information. But they[^SzZaSuBrErGoFe2014] showed that random projection of activation function($\phi(x)$) can produce results semantically 
 indistinguishable from coordinates of ($\phi(x)$) as shown in Figure ??. It give rise to a conjecture that neural network disentangle variation factor across coordinates. Typically it 
-can be seen as space of activations rather than individual units, that contains semantic information. *A similar and important result was shown by Mikolov et al[^MiChCoDe2013] where words are represented in vector space \
-and it preserve semantic relation and analogies. At the same time each unit of vector (word) do not contain any semantic information.* 
+can be seen as space of activations rather than individual units, that contains semantic information. *A similar and important result was shown by Mikolov et al[^MiChCoDe2013] where words are represented in<br/> 
+vector space and it preserve semantic relation and analogies. At the same time each unit of vector (word) do not contain any semantic information.* 
 
 The second property stability of neural network with respect to small perturbation to their input. Consider a task of recognizing objects by deep neural network. We would expect small perturbation do not 
 change class of the image. But this not true, these examples are called adversarial examples. We can generate adversarial examples by applying perturbation to maximize the prediction error. *It has been \
