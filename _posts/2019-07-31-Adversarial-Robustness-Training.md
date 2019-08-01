@@ -13,4 +13,23 @@ Neural network consistently misbehave on adversarial examples (input examples fo
 ## Related Work ##
 Szegedy et al [^SzZaSuBrErGoFe2014]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## References ##
+
 [^SzZaSuBrErGoFe2014]: Szegedy et al, 2014.Intriguing properties of neural networks. Available at: [https://arxiv.org/abs/1312.6199](https://arxiv.org/abs/1312.6199)
