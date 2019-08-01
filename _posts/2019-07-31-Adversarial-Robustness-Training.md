@@ -13,25 +13,25 @@ Neural network consistently misbehave on adversarial examples (input examples fo
 ## Related Work ##
 Szegedy et al[^SzZaSuBrErGoFe2014] discovered that various machine learning algorithm including neural network misbehave with adversarial examples. It was observed that various type of models with different 
 architecture mis-classify same set of adversarial examples. Neural network in general can achieve high performance in supervised learning through back propagation making it hard to interpretate and can have
-counter intuitive properties. Two of these counter intuitive properties are discussed in this paper[^SzZaSuBrErGoFe2014].  
+counter intuitive properties. Two of these counter intuitive properties are discussed in this paper[^SzZaSuBrErGoFe2014].
+  
 First property is related to semantic meaning of each unit. An example of semantic meaning is shown in Figure ??. In past work has been done by Ross et al[^GiDoDaMA2013], Goodfellow et al[^GoLeeLeSaNg2009]
 , Matthew et al[^ZeFe2013] to show semantic meaning of any unit by finding an input that maximally activate a given unit. It is based on an underlying implicit assumption that units from last layer form 
-distinguished basis for extracting semantics information. But they[^SzZaSuBrErGoFe2014] showed that random projection of activation function($\phi(x)$) can produce results semantically 
-indistinguishable from coordinates of ($\phi(x)$) as shown in Figure ??. It give rise to a conjecture that neural network disentangle variation factor across coordinates. Typically it 
-can be seen as space of activations rather than individual units, that contains semantic information. *A similar and important result was shown by Mikolov et al[^MiChCoDe2013] where words are represented in<br/> 
-vector space and it preserve semantic relation and analogies. At the same time each unit of vector (word) do not contain any semantic information.* 
+distinguished basis for extracting semantics information. But they[^SzZaSuBrErGoFe2014] showed that random projection of activation function($\phi(x)$) can produce results semantically indistinguishable from 
+coordinates of ($\phi(x)$) as shown in Figure ??. It give rise to a conjecture that neural network disentangle variation factor across coordinates. Typically it can be seen as space of 
+activations rather than individual units, that contains semantic information. *A similar and important result was shown by Mikolov et al[^MiChCoDe2013] where words are represented in*
+*vector space and it preserve semantic relation and analogies. At the same time each unit of vector (word) do not contain any semantic information.* 
 
 The second property stability of neural network with respect to small perturbation to their input. Consider a task of recognizing objects by deep neural network. We would expect small perturbation do not 
-change class of the image. But this not true, these examples are called adversarial examples. We can generate adversarial examples by applying perturbation to maximize the prediction error. *It has been \
-observed that adversarial examples are robust and are shared by neural network with varied number of layers, activation or trained on different subset of training data. If an example is hard for one neural \
-network then probalistically it is still hard for other neural network.*  This suggest deep neural network learned by back propagation have *counter intuitive charactierstics and intrinsic blind spots*, whose \
-structure is connected data distribution in non obvious way. Adversarial phenomenon is not specific to deep neural network but affects other machine learning models including linear classification such as \
-support vector machine(SVM). May be adversarial examples exist not due to nonlinearity of the neural network. There are many problems exist that behaves accordingly in two or three dimension but shows unexpected \
-behavior in higher dimension also know as curse of dimension. According to this interpretation[^GoShSz2015] infinitesimal perturbation in input leads to large change in higher dimension dot product. This \
+change class of the image. But this not true, these examples are called adversarial examples. We can generate adversarial examples by applying perturbation to maximize the prediction error. *It has been*
+*observed that adversarial examples are robust and are shared by neural network with varied number of layers, activation or trained on different subset of training data. If an example is hard for one neural*
+*network then probalistically it is still hard for other neural network.*  This suggest deep neural network learned by back propagation have *counter intuitive charactierstics and intrinsic blind spots*, whose
+structure is connected data distribution in non obvious way. Adversarial phenomenon is not specific to deep neural network but affects other machine learning models including linear classification such as
+support vector machine(SVM). May be adversarial examples exist not due to nonlinearity of the neural network. There are many problems exist that behaves accordingly in two or three dimension but shows unexpected
+behavior in higher dimension also know as curse of dimension. According to this interpretation[^GoShSz2015] infinitesimal perturbation in input leads to large change in higher dimension dot product. This 
 interpretation can again be misleading since it is not necessary for this phenomenon to occur as shown Below in Figure ??. 
-
-*At first glance we can think of reducing adversarial attack by restricting access to internal parameters and gradients. Even with limited access it is been shown by Andrew et al[^IlEnAtLi2017] that adversarial \
-attack is still feasible.* 
+*At first glance we can think of reducing adversarial attack by restricting access to internal parameters and gradients. Even with limited access it is been shown by Andrew et al[^IlEnAtLi2017] that adversarial*
+*attack is still feasible.* 
     
 
 
