@@ -12,7 +12,7 @@ Neural network consistently misbehave on adversarial examples (input examples fo
 
 ## Related Work ##
 Szegedy et al[^SzZaSuBrErGoFe2014] discovered that various machine learning algorithm including neural network misbehave with adversarial examples. It was observed that various type of models with different 
-architecture mis-classify same set of adversarial examples. Neural network in general can achieve high performance in supervised learning through back propagation making it hard to interpretate and can have
+architecture misclassify same set of adversarial examples. Neural network in general can achieve high performance in supervised learning through back propagation making it hard to interpretate and can have
 counter intuitive properties. Two of these counter intuitive properties are discussed in this paper[^SzZaSuBrErGoFe2014].
   
 First property is related to semantic meaning of each unit. An example of semantic meaning is shown in Figure ??. In past work has been done by Ross et al[^GiDoDaMA2013], Goodfellow et al[^GoLeeLeSaNg2009]
@@ -32,7 +32,7 @@ behavior in higher dimension also know as curse of dimension. According to this 
 interpretation can again be misleading since it is not necessary for this phenomenon to occur as shown Below in Figure ??. 
 *At first glance we can think of reducing adversarial attack by restricting access to internal parameters and gradients. Even with limited access it is been shown by Andrew et al[^IlEnAtLi2017] that adversarial*
 *attack is still feasible.* 
-    
+Recently some theoritical work has been done explaining existence of adversarial examples and adversarial robust learning [^ScSaTsTaMa2018],[^TsSaEnTuMa2019].        
 
 
 
@@ -67,3 +67,6 @@ interpretation can again be misleading since it is not necessary for this phenom
 
 [^GoShSz2015]: Goodfellow et al, 2015. Explaining and Harnessing Adversarial Examples. Available at: [http://arxiv.org/abs/1412.6572](http://arxiv.org/abs/1412.6572)
 
+[^ScSaTsTaMa2018]: Schmidt et al, 2018. Adversarially Robust Generalization Requires More Data. Available at: [http://arxiv.org/abs/1804.11285](http://arxiv.org/abs/1804.11285)
+
+[^TsSaEnTuMa2019]: Tsipras et al, 2018. Robustness May Be at Odds with Accuracy. Available at: [https://arxiv.org/abs/1805.12152](https://arxiv.org/abs/1805.12152)
