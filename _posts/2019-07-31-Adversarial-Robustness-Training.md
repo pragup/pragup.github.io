@@ -10,7 +10,7 @@ tags:
 ## ABSTRACT ##
 Neural network consistently misbehave on adversarial examples (input examples formed by little perturbation to examples from dataset such that perturbed examples output incorrect answers with high confidence. )
 
-## Related Work ##
+## RELATED WORK ##
 Szegedy et al[^SzZaSuBrErGoFe2014] discovered that various machine learning algorithm including neural network misbehave with adversarial examples. It was observed that various type of models with different 
 architecture misclassify same set of adversarial examples. Neural network in general can achieve high performance in supervised learning through back propagation making it hard to interpretate and can have
 counter intuitive properties. Two of these counter intuitive properties are discussed in this paper[^SzZaSuBrErGoFe2014].
@@ -32,7 +32,14 @@ behavior in higher dimension also know as curse of dimension. According to this 
 interpretation can again be misleading since it is not necessary for this phenomenon to occur as shown Below in Figure ??. 
 *At first glance we can think of reducing adversarial attack by restricting access to internal parameters and gradients. Even with limited access it is been shown by Andrew et al[^IlEnAtLi2017] that adversarial*
 *attack is still feasible.* 
-Recently some theoritical work has been done explaining existence of adversarial examples and adversarial robust learning [^ScSaTsTaMa2018],[^TsSaEnTuMa2019].        
+Recently some theoritical work has been done explaining existence of adversarial examples and adversarial robust learning [^ScSaTsTaMa2018] [^TsSaEnTuMa2019]. Schmidt et al shown that sample complexity for 
+adversarial robustness learning is significantly large as compared to standard leanring even for simple natural data model(guassian data model) as shown in Figure ??. They showed sample complexity of standard 
+generalization compared to adversarially robust generalization independently of any learning algorithm. 
+
+### STANDARD GENERALIZATION ###
+Let $f_{\hat{w}}(x) = sgn(<w, x>)$ is a linear classifier where $f_{\hat{w}}: R^d \to {1, -1}$. They studied a situation where good standard classification error can be achieved by a single sample. 
+error. ![ArtSchmidt_Fig_1](https://pragup.github.io/images/ART_Schmidt_Theorm_4.png) 
+### ROBUST GENERALIZATION ###       
 
 
 
@@ -69,4 +76,4 @@ Recently some theoritical work has been done explaining existence of adversarial
 
 [^ScSaTsTaMa2018]: Schmidt et al, 2018. Adversarially Robust Generalization Requires More Data. Available at: [http://arxiv.org/abs/1804.11285](http://arxiv.org/abs/1804.11285)
 
-[^TsSaEnTuMa2019]: Tsipras et al, 2018. Robustness May Be at Odds with Accuracy. Available at: [https://arxiv.org/abs/1805.12152](https://arxiv.org/abs/1805.12152)
+[^TsSaEnTuMa2019]: Dimitris et al, 2018. Robustness May Be at Odds with Accuracy. Available at: [https://arxiv.org/abs/1805.12152](https://arxiv.org/abs/1805.12152)
