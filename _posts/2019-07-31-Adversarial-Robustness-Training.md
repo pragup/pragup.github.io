@@ -46,8 +46,9 @@ error requires significantly more samples shown by Theorm $5, 6$.
 ![ArtSchmidt_Fig_1](https://pragup.github.io/images/ART_Schmidt_Theorm_5.PNG)
 ![ArtSchmidt_Fig_1](https://pragup.github.io/images/ART_Schmidt_Theorm_6.PNG)
 
-By theorm $5, 6$ sample complexity $n$ is bounded as 
-$\frac{c}{log(d)} \leq \frac{n}{\epsilon^2 \sqrt(d)} \frac{c'}$
+By theorm $5, 6$ sample complexity $n$ is bounded as $\frac{c}{log(d)} \leq \frac{n}{\epsilon^2 \sqrt{d}}\leq  c'$. 
+When perturbation has $l_{\infty}$, then sample complexity of robust generalization is larger than that of standard generalization by $\sqrt(d)$
+
 
 
 
