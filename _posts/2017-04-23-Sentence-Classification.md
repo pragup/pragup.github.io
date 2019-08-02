@@ -3,9 +3,9 @@ title: 'Sentence Classification using CNN'
 date: 2017-04-23
 permalink: /posts/2017/04/sentence-classification/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - Convolution Neural Network
+  - Word Vector
+  - Sentimental Analysis 
 ---
 ## ABSTRACT ##
 Convolution Neural Networks are typically used in computer vision problems like image classification. Most of the computer vision systems todays at its core are based on CNNs from photo tagging to self driving cars. 
