@@ -22,7 +22,7 @@ First property is related to semantic meaning of each unit. An example of semant
 In past work has been done by Ross et al[^GiDoDaMA2013], Goodfellow et al[^GoLeeLeSaNg2009]
 , Matthew et al[^ZeFe2013] to show semantic meaning of any unit by finding an input that maximally activate a given unit. It is based on an underlying implicit assumption that units from last layer form 
 distinguished basis for extracting semantics information. But they[^SzZaSuBrErGoFe2014] showed that random projection of activation function($\phi(x)$) can produce results semantically indistinguishable from 
-coordinates of ($\phi(x)$) as shown in Figure ??.
+coordinates of ($\phi(x)$) as shown in Figure below.
 
 ![Art_Fig_2](https://pragup.github.io/images/ART_Figure_2.PNG)
 
@@ -69,8 +69,9 @@ significantly large amount of samples for adversarial robustness. Moreover they[
 
 In general adversarial training is computationally expensive (more training time) and according to Schmidt et al [^ScSaTsTaMa2018] require more data points. According to Dimitris et al[^TsSaEnTuMa2019] standard classification training 
 and adversarial robust training are fundamentally at odds. Even though standard training model are benefited from adversarial robustness in limited training data but in general there is a trade off between standard accuracy 
-and adversarially robust accuracy of the model as shown in Figure ??. 
-
+and adversarially robust accuracy of the model as shown in Figure below. 
+![ArtDimitris_Fig_3](https://pragup.github.io/images/ART_Dimitris_Figure_2.PNG)
+![ArtDimitris_Fig_4](https://pragup.github.io/images/ART_Dimitris_Figure_3.PNG)
 *Why there is a tradeoff between standard and adversarially robust accuracy ?*
 
 *Reason:* standard classifier learns a lot from weakly correlated features to improve the accuracy of the model as discussed below. 
