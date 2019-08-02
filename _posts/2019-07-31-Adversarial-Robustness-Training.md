@@ -79,7 +79,7 @@ adversarial accuracy. Paper[^TsSaEnTuMa2019] gave robust accuracy trade off theo
 According to it if $p < 1$ as standard accuracy approach $100 \%$ ($\delta \to 0$), implies adversarial accuracy falls to $0\%$. If $p = 0.95$, then for any standard accuracy more than $1 - \delta$, robust accuracy is 
 atmost $19\delta$.                                 
 
-Results from both the papers [^ScSaTsTaMa2018], [^TsSaEnTuMa2019] are not learning algorithm dependent. Hence can be extended to deep neural network. 
+Results from both the papers [^ScSaTsTaMa2018] [^TsSaEnTuMa2019] are not learning algorithm dependent. Hence can be extended to deep neural network. 
 
 
 
