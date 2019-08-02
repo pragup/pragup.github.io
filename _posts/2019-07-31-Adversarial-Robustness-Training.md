@@ -50,16 +50,21 @@ significantly large amount of samples for adversarial robustness. Moreover they[
 *algorithms and have constant number of samples being misclassified*.  
 ![ArtSchmidt_Fig_3](https://pragup.github.io/images/ART_Schmidt_Theorm_11.PNG)
 
-In general adversarial training is computationally expensive (more training time) and according to Schmidt et al [^ScSaTsTaMa2018] require more data points. According to Dimitris et al standard classification training 
+In general adversarial training is computationally expensive (more training time) and according to Schmidt et al [^ScSaTsTaMa2018] require more data points. According to Dimitris et al[^TsSaEnTuMa2019] standard classification training 
 and adversarial robust training are fundamentally at odds. Even though standard training model are benefited from adversarial robustness in limited training data but in general there is a trade off between standard accuracy 
 and adversarially robust accuracy of the model as shown in Figure ??. 
 
 *Why there is a tradeoff between standard and adversarially robust accuracy ?*
 
-*Reason* standard classifier learns a lot from weakly correlated features to improve the accuracy of the model as discussed below. 
+*Reason:* standard classifier learns a lot from weakly correlated features to improve the accuracy of the model as discussed below. 
 
 ### STANDARD CLASSIFICATION ###
-
+Let data model consists of input - output pari $(x, y)$ sampled from $D$ as below.
+![ArtDimitris_Fig_1](https://pragup.github.io/images/ART_Dimitris_Figure_1.PNG)
+$N(\mu, \sigma^2)$ is normal distribution with mean $\mu$, variance $\sigma^2$ and $p \geq 0.5$. $\eta$ is chosen such that linear classifier achieve higher accuracy e.g $\eta = O(\frac{1}{\sqrt{d}})$. Let $x_1$
+is moderately correlated with label and $x_2, ........ , x_{d + 1}$ are weakely correlated with the label. For this simple problem linear classifier 
+$f_{avg}(x) = sgn(w_{unif}^{T}\cdot x)$, where $w_{unif} = [0, \frac{1}{d}, ........ , \frac{1}{d}]$ and can achieve an accuracy close to $100$ percent for $d$ large enough 
+$Pr(f_{avg}(x) = y) = Pr(N(\eta, \frac{1}{d})  > 0) \geq 99 \%$, when $\eta \geq \frac{3}{\sqrt{d}}$
 ### ADVERSARIALLY ROBUST CLASSIFICATION ###
   
 
