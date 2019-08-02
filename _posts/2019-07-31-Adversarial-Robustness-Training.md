@@ -37,9 +37,9 @@ adversarial robustness learning is significantly large as compared to standard l
 generalization compared to adversarially robust generalization independently of any learning algorithm. 
 
 ### STANDARD GENERALIZATION ###
-Let $f_{\hat{w}}(x) = sgn(<w, x>)$ is a linear classifier where $f_{\hat{w}}: R^d \to {1, -1}$. They studied a situation where good standard classification error can be achieved by a single sample as shown
+Let $f_{\hat{w}}(x) = sgn(<\hat{w}, x>)$ is a linear classifier where $f_{\hat{w}}: R^d \to {1, -1}$. They studied a situation where good standard classification error can be achieved by a single sample as shown
 in Theorm $4$.
-![ArtSchmidt_Fig_1](https://pragup.github.io/images/ART_Schmidt_Theorm_4.png) 
+![ArtSchmidt_Fig_1](https://pragup.github.io/images/ART_Schmidt_Theorm_4.PNG)
 ### ROBUST GENERALIZATION ###
 $l_{\infty}^{\epsilon}$ are $l_{\infty}$ perturbation of input $x$ within ${B^{\epsilon}}_{\infty}(x) = \{x' \in R^d \mid ||x - x'||_{\infty} \leq \epsilon \}$  ball. For $l_{\infty}^{\epsilon}$ robust classification
 error requires significantly more samples shown by Theorm $5, 6$.      
