@@ -3,14 +3,13 @@ title: 'Adversarial Robustness Training in Neural Network'
 date: 2019-07-31
 permalink: /posts/2019/07/Adversarial-Robustness-Training/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - Machine Learning
+  - Deep Neural Network
+  - Theoretical
 ---
-## ABSTRACT ##
+
 Neural network consistently misbehave on adversarial examples (input examples formed by little perturbation to examples from dataset such that perturbed examples output incorrect answers with high confidence. )
 
-## RELATED WORK ##
 Szegedy et al[^SzZaSuBrErGoFe2014] discovered that various machine learning algorithm including neural network misbehave with adversarial examples. It was observed that various type of models with different 
 architecture misclassify same set of adversarial examples. Neural network in general can achieve high performance in supervised learning through back propagation making it hard to interpretate and can have
 counter intuitive properties. Two of these counter intuitive properties are discussed in this paper[^SzZaSuBrErGoFe2014].
