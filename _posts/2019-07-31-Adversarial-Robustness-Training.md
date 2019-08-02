@@ -41,7 +41,7 @@ Let $f_{\hat{w}}(x) = sgn(<\hat{w}, x>)$ is a linear classifier where $f_{\hat{w
 in Theorm $4$.
 ![ArtSchmidt_Fig_1](https://pragup.github.io/images/ART_Schmidt_Theorm_4.PNG)
 ### ROBUST GENERALIZATION ###
-$l_{\infty}^{\epsilon}$ are $l_{\infty}$ perturbation of input $x$ within ${B^{\epsilon}}_{\infty}(x)$ = $\{x' \in R^d \mid ||x - x'||_{\infty} \leq \epsilon \}$  ball. For $l_{\infty}^{\epsilon}$ robust classification
+$l_{\infty}^{\epsilon}$ are $l_{\infty}$ perturbation of input $x$ within $B^{\epsilon}_{\infty}(x)$ = $\{x' \in R^d \mid ||x - x'||_{\infty} \leq \epsilon \}$  ball. For $l_{\infty}^{\epsilon}$ robust classification
 error requires significantly more samples shown by Theorm $5, 6$.      
 
 
