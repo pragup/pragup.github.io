@@ -25,34 +25,43 @@ activations rather than individual units, that contains semantic information. *A
 The second property stability of neural network with respect to small perturbation to their input. Consider a task of recognizing objects by deep neural network. We would expect small perturbation do not 
 change class of the image. But this not true, these examples are called adversarial examples. We can generate adversarial examples by applying perturbation to maximize the prediction error. *It has been*
 *observed that adversarial examples are robust and are shared by neural network with varied number of layers, activation or trained on different subset of training data. If an example is hard for one neural*
-*network then probalistically it is still hard for other neural network.*  This suggest deep neural network learned by back propagation have *counter intuitive charactierstics and intrinsic blind spots*, whose
+*network then probabilistically it is still hard for other neural network.*  This suggest deep neural network learned by back propagation have *counter intuitive characteristics and intrinsic blind spots*, whose
 structure is connected data distribution in non obvious way. Adversarial phenomenon is not specific to deep neural network but affects other machine learning models including linear classification such as
 support vector machine(SVM). May be adversarial examples exist not due to nonlinearity of the neural network. There are many problems exist that behaves accordingly in two or three dimension but shows unexpected
 behavior in higher dimension also know as curse of dimension. According to this interpretation[^GoShSz2015] infinitesimal perturbation in input leads to large change in higher dimension dot product. This 
 interpretation can again be misleading since it is not necessary for this phenomenon to occur as shown Below in Figure ??. 
 *At first glance we can think of reducing adversarial attack by restricting access to internal parameters and gradients. Even with limited access it is been shown by Andrew et al[^IlEnAtLi2017] that adversarial*
 *attack is still feasible.* 
-Recently some theoritical work has been done explaining existence of adversarial examples and adversarial robust learning [^ScSaTsTaMa2018] [^TsSaEnTuMa2019]. Schmidt et al shown that sample complexity for 
-adversarial robustness learning is significantly large as compared to standard leanring even for simple natural data model(guassian data model) as shown in Figure ??. They showed sample complexity of standard 
+Recently some theoretical work has been done explaining existence of adversarial examples and adversarial robust learning [^ScSaTsTaMa2018] [^TsSaEnTuMa2019]. Schmidt et al[^ScSaTsTaMa2018] shown that sample complexity for 
+adversarial robustness learning is significantly large as compared to standard learning even for simple natural data model(Gaussian data model) as shown in Figure ??. They showed sample complexity of standard 
 generalization compared to adversarially robust generalization independently of any learning algorithm. 
-
 ### STANDARD GENERALIZATION ###
 Let $f_{\hat{w}}(x) = sgn(<\hat{w}, x>)$ is a linear classifier where $f_{\hat{w}}: R^d \to {1, -1}$. They studied a situation where good standard classification error can be achieved by a single sample as shown
 in Theorm $4$.
 ![ArtSchmidt_Fig_1](https://pragup.github.io/images/ART_Schmidt_Theorm_4.PNG)
 ### ROBUST GENERALIZATION ###
 $l_{\infty}^{\epsilon}$ are $l_{\infty}$ perturbation of input $x$ within $B_{\infty}^{\epsilon}(x)$ = {$ x' \in R^d $ $ \mid $ $\mid{x - x'}\mid_{\infty}$   $\leq \epsilon $}  ball. For $l_{\infty}^{\epsilon}$
-robust classification error requires significantly more samples shown by Theorm $5, 6$.      
+robust classification error requires significantly more samples shown by Theorm $5, 6$[^ScSaTsTaMa2018].      
 ![ArtSchmidt_Fig_1](https://pragup.github.io/images/ART_Schmidt_Theorm_5.PNG)
 ![ArtSchmidt_Fig_2](https://pragup.github.io/images/ART_Schmidt_Theorm_6.PNG)
-
 By theorm $5, 6$ sample complexity $n$ is bounded as $\frac{c}{log(d)} \leq \frac{n}{\epsilon^2 \sqrt{d}}\leq  c'$. 
 When perturbation has $l_{\infty}$, then sample complexity of robust generalization is larger than that of standard generalization by $\sqrt{d}$ i.e polynomial in dimension. This shows that high dimensionality problem require
-significantly large amount of samples for adversarial robustness. More over they also shows using Theorm $11$ that given $n$ samples there is a single adversarial perturbation that *can be applied to all learning*
+significantly large amount of samples for adversarial robustness. Moreover they[^ScSaTsTaMa2018] also showed using Theorm $11$ that given $n$ samples there is a single adversarial perturbation that *can be applied to all learning*
 *algorithms and have constant number of samples being misclassified*.  
 ![ArtSchmidt_Fig_3](https://pragup.github.io/images/ART_Schmidt_Theorm_11.PNG)
 
+In general adversarial training is computationally expensive (more training time) and according to Schmidt et al [^ScSaTsTaMa2018] require more data points. According to Dimitris et al standard classification training 
+and adversarial robust training are fundamentally at odds. Even though standard training model are benefited from adversarial robustness in limited training data but in general there is a trade off between standard accuracy 
+and adversarially robust accuracy of the model as shown in Figure ??. 
 
+*Why there is a tradeoff between standard and adversarially robust accuracy ?*
+
+*Reason* standard classifier learns a lot from weakly correlated features to improve the accuracy of the model as discussed below. 
+
+### STANDARD CLASSIFICATION ###
+
+### ADVERSARIALLY ROBUST CLASSIFICATION ###
+  
 
 
 
