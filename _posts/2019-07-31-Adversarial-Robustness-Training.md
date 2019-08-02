@@ -1,4 +1,4 @@
- ---
+---
 title: 'Adversarial Robust Training(Neural Network)'
 date: 2019-07-31
 permalink: /posts/2019/07/Adversarial-Robustness-Training/
@@ -7,7 +7,6 @@ tags:
   - Deep Neural Network
   - Theoretical
 ---
-
 Neural network consistently misbehave on adversarial examples (input examples formed by little perturbation to examples from dataset such that perturbed examples output incorrect answers with high confidence. ) as shown in Figure below. 
 ![Art_Fig_0](https://pragup.github.io/images/ART_Figure_0.PNG)
 
