@@ -1,5 +1,5 @@
 ---
-title: 'Adversarial Robustness Training in Neural Network'
+title: 'Adversarial Robust Training in Neural Network'
 date: 2019-07-31
 permalink: /posts/2019/07/Adversarial-Robustness-Training/
 tags:
