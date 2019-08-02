@@ -7,7 +7,9 @@ tags:
   - Deep Neural Network
   - Theoretical
 ---
-Neural network consistently misbehave on adversarial examples (input examples formed by little perturbation to examples from dataset such that perturbed examples output incorrect answers with high confidence. ) as shown in Figure below. 
+Neural network consistently misbehave on adversarial examples (input examples formed by little perturbation of input examples from the dataset such that perturbed examples output incorrect answers with high confidence)
+as shown in Figure below. 
+
 ![Art_Fig_0](https://pragup.github.io/images/ART_Figure_0.PNG)
 
 Szegedy et al[^SzZaSuBrErGoFe2014] discovered that various machine learning algorithm including neural network misbehave with adversarial examples. It was observed that various type of models with different 
@@ -20,21 +22,21 @@ First property is related to semantic meaning of each unit. An example of semant
 
 In past work has been done by Ross et al[^GiDoDaMA2013], Goodfellow et al[^GoLeeLeSaNg2009]
 , Matthew et al[^ZeFe2013] to show semantic meaning of any unit by finding an input that maximally activate a given unit. It is based on an underlying implicit assumption that units from last layer form 
-distinguished basis for extracting semantics information. But they[^SzZaSuBrErGoFe2014] showed that random projection of activation function($\phi(x)$) can produce results semantically indistinguishable from 
+distinguished basis for extracting semantics information. But Szegedy et al[^SzZaSuBrErGoFe2014] showed that random projection of activation function($\phi(x)$) can produce results semantically indistinguishable from 
 coordinates of ($\phi(x)$) as shown in Figure below.
 
 ![Art_Fig_2](https://pragup.github.io/images/ART_Figure_2.PNG)
 
-It give rise to a conjecture that neural network disentangle variation factor across coordinates. Typically it can be seen as space of 
-activations rather than individual units, that contains semantic information. *A similar and important result was shown by Mikolov et al[^MiChCoDe2013] where words are represented in*
-*vector space and it preserve semantic relation and analogies. At the same time each unit of vector (word) do not contain any semantic information.* 
+It give rise to a conjecture that neural network disentangle variation factor across coordinates. Typically it can be seen as space of activations functions rather than individual units, that contains 
+semantic information. *A similar and important result was shown by Mikolov et al[^MiChCoDe2013] where words are represented in vector space and it preserve semantic relation and analogies. At the same* 
+*time each unit of vector (word) do not contain any semantic information.* 
 
 The second property stability of neural network with respect to small perturbation to their input. Consider a task of recognizing objects by deep neural network. We would expect small perturbation do not 
 change class of the image. But this not true, these examples are called adversarial examples. We can generate adversarial examples by applying perturbation to maximize the prediction error. *It has been*
 *observed that adversarial examples are robust and are shared by neural network with varied number of layers, activation or trained on different subset of training data. If an example is hard for one neural*
 *network then probabilistically it is still hard for other neural network.*  This suggest deep neural network learned by back propagation have *counter intuitive characteristics and intrinsic blind spots*, whose
 structure is connected data distribution in non obvious way. Adversarial phenomenon is not specific to deep neural network but affects other machine learning models including linear classification such as
-support vector machine(SVM). May be adversarial examples exist not due to nonlinearity of the neural network. There are many problems exist that behaves accordingly in two or three dimension but shows unexpected
+support vector machine(SVM). May be adversarial examples exists not due to nonlinearity of the neural network. There are many problems exist that behaves accordingly in two or three dimension but shows unexpected
 behavior in higher dimension also know as curse of dimension. According to this interpretation[^GoShSz2015] infinitesimal perturbation in input leads to large change in higher dimension dot product. This 
 interpretation can again be misleading since it is not necessary for this phenomenon to occur as shown in the Figure below.
 
@@ -48,7 +50,7 @@ accuracy as compared with MNIST because dataset may not be large enough to train
 
 ![Art_Fig_4](https://pragup.github.io/images/ART_Schmidt_Figure_1.PNG)
 
-They showed sample complexity of standard generalization compared to adversarially robust generalization independently of any learning algorithm.
+They showed sample complexity of adversarially robust generalization compared to standard generalization, independently of any learning algorithm.
 
 
 ### STANDARD GENERALIZATION ###
@@ -68,7 +70,7 @@ significantly large amount of samples for adversarial robustness. Moreover they[
 
 In general adversarial training is computationally expensive (more training time) and according to Schmidt et al [^ScSaTsTaMa2018] require more data points. According to Dimitris et al[^TsSaEnTuMa2019] standard classification training 
 and adversarial robust training are fundamentally at odds. Even though standard training model are benefited from adversarial robustness in limited training data but in general there is a trade off between standard accuracy 
-and adversarially robust accuracy of the model as shown in Figure below. 
+and adversarially robust accuracy of the model as shown in Figures below. 
 ![ArtDimitris_Fig_3](https://pragup.github.io/images/ART_Dimitris_Figure_2.PNG)
 ![ArtDimitris_Fig_4](https://pragup.github.io/images/ART_Dimitris_Figure_3.PNG)
 *Why there is a tradeoff between standard and adversarially robust accuracy ?*
@@ -76,17 +78,17 @@ and adversarially robust accuracy of the model as shown in Figure below.
 *Reason:* standard classifier learns a lot from weakly correlated features to improve the accuracy of the model as discussed below. 
 
 ### STANDARD CLASSIFICATION ###
-Let data model consists of input - output pari $(x, y)$ sampled from $D$ as below.
+Let data model consists of input - output pair $(x, y)$ sampled from $D$ as below.
 ![ArtDimitris_Fig_1](https://pragup.github.io/images/ART_Dimitris_Figure_1.PNG)
-$N(\mu, \sigma^2)$ is normal distribution with mean $\mu$, variance $\sigma^2$ and $p \geq 0.5$. $\eta$ is chosen such that linear classifier achieve higher accuracy e.g $\eta = O(\frac{1}{\sqrt{d}})$. Let $x_1$
-is moderately correlated with label and $x_2, ........ , x_{d + 1}$ are weakly correlated with the label. For this simple problem linear classifier 
-$f_{avg}(x) = sgn(w_{unif}^{T}\cdot x)$, where $w_{unif} = [0, \frac{1}{d}, ........ , \frac{1}{d}]$ and can achieve an accuracy close to $100\%$ for $d$ large enough 
+$N(\mu, \sigma^2)$ is normal distribution with mean $\mu$, variance $\sigma^2$ and $p \geq 0.5$. $\eta$ is chosen such that linear classifier achieve higher accuracy e.g $\eta = O(\frac{1}{\sqrt{d}})$. 
+Let $x_1$ is moderately correlated with label and $x_2, ........ , x_{d + 1}$ are weakly correlated with the label. For this simple problem linear classifier $f_{avg}(x) = sgn(w_{unif}^{T}\cdot x)$, where 
+$w_{unif} = [0, \frac{1}{d}, ........ , \frac{1}{d}]$, can achieve an accuracy close to $100\%$ for $d$ large enough 
 
 $Pr(f_{avg}(x) = y) = Pr(N(\eta, \frac{1}{d})  > 0) \geq 99 \%$, when $\eta \geq \frac{3}{\sqrt{d}}$. 
 ### ADVERSARIALLY ROBUST CLASSIFICATION ###
 As we can see average of weakly correlated features can give us a single highly correlated meta-feature with the label. Unfortunately this will completely break in adversarial setting. If $l_{\infty}$ bounded adversary
 is only allowed moderate amount of perturbation $\epsilon$, then adversary is not affected by meta feature. But for e.g $\epsilon = 2\eta$, then adversary can shift weakly correlated features to $-y$. Now perturbed input features
-$x_2', ............, x_{d+1}'$ are sample from i.e $N(-\eta y, 1)$. Now weakly correlated features belongs to a wrong class.
+$x_2', ............, x_{d+1}'$ are sampled from i.e $N(-\eta y, 1)$. Now weakly correlated features belongs to a wrong class.
 
 $\min_{\mid \mid \delta \mid \mid_{\infty}} Pr(sign(x + \delta) = y) \leq Pr(N(-\eta, \frac{1}{d}) > 0)$
 
