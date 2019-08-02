@@ -64,12 +64,20 @@ Let data model consists of input - output pari $(x, y)$ sampled from $D$ as belo
 $N(\mu, \sigma^2)$ is normal distribution with mean $\mu$, variance $\sigma^2$ and $p \geq 0.5$. $\eta$ is chosen such that linear classifier achieve higher accuracy e.g $\eta = O(\frac{1}{\sqrt{d}})$. Let $x_1$
 is moderately correlated with label and $x_2, ........ , x_{d + 1}$ are weakly correlated with the label. For this simple problem linear classifier 
 $f_{avg}(x) = sgn(w_{unif}^{T}\cdot x)$, where $w_{unif} = [0, \frac{1}{d}, ........ , \frac{1}{d}]$ and can achieve an accuracy close to $100\%$ for $d$ large enough 
+
 $Pr(f_{avg}(x) = y) = Pr(N(\eta, \frac{1}{d})  > 0) \geq 99 \%$, when $\eta \geq \frac{3}{\sqrt{d}}$. 
 ### ADVERSARIALLY ROBUST CLASSIFICATION ###
 As we can see average of weakly correlated features can give us a single highly correlated meta-feature with the label. Unfortunately this will completely break in adversarial setting. If $l_{\infty}$ bounded adversary
 is only allowed moderate amount of perturbation $\epsilon$, then adversary is not affected by meta feature. But for e.g $\epsilon = 2\eta$, then adversary can shift weakly correlated features to $-y$. Now perturbed input features
 $x_2', ............, x_{d+1}'$ are sample from i.e $N(-\eta y, 1)$. Now weakly correlated features belongs to a wrong class.
-\[\min_{\mid \mid \delta \mid \mid_{\infty}} Pr\]                                  
+
+$\min_{\mid \mid \delta \mid \mid_{\infty}} Pr(sign(x + \delta) = y) \leq Pr(N(-\eta, \frac{1}{d}) > 0)$
+
+Hence adversarial accuracy cannot be better than $1 \%$. It clearly indicate meta feature is far more predictive of true label, but highly inaccurate in case of adversary. Hence it creates a dilemma between standard and 
+adversarial accuracy. Paper[^TsSaEnTuMa2019] gave robust accuracy trade off theorm $2.1$.
+![ArtDimitris_Fig_2](https://pragup.github.io/images/ART_Dimitris_Theorm_2_1.PNG)
+
+According to it if $p < 1$ as standard accuracy approach $100 \%$ ($\delta \to 0$), implies adversarial accuracy falls to $0\%$. If $p = 0.95$, then for any standard accuracy more than $1 - \delta$, robust accuracy is atmost $19\delta$.                                 
 
 
 
