@@ -35,7 +35,7 @@ Recently some theoretical work has been done explaining existence of adversarial
 adversarial robustness learning is significantly large as compared to standard learning even for simple natural data model(Gaussian data model) as shown in Figure ??. They showed sample complexity of standard 
 generalization compared to adversarially robust generalization independently of any learning algorithm. 
 ### STANDARD GENERALIZATION ###
-Let $f_{\hat{w}}(x) = sgn(<\hat{w}, x>)$ is a linear classifier where $f_{\hat{w}}: R^d \to {1, -1}$. They studied a situation where good standard classification error can be achieved by a single sample as shown
+Let $f_{\hat{w}}(x) = sgn(<\hat{w}, x>)$ is a linear classifier where $f_{\hat{w}}: R^d \to \{1, -1 \}$. They studied a situation where good standard classification error can be achieved by a single sample as shown
 in Theorm $4$.
 ![ArtSchmidt_Fig_1](https://pragup.github.io/images/ART_Schmidt_Theorm_4.PNG)
 ### ROBUST GENERALIZATION ###
@@ -76,8 +76,10 @@ Hence adversarial accuracy cannot be better than $1 \%$. It clearly indicate met
 adversarial accuracy. Paper[^TsSaEnTuMa2019] gave robust accuracy trade off theorm $2.1$.
 ![ArtDimitris_Fig_2](https://pragup.github.io/images/ART_Dimitris_Theorm_2_1.PNG)
 
-According to it if $p < 1$ as standard accuracy approach $100 \%$ ($\delta \to 0$), implies adversarial accuracy falls to $0\%$. If $p = 0.95$, then for any standard accuracy more than $1 - \delta$, robust accuracy is atmost $19\delta$.                                 
+According to it if $p < 1$ as standard accuracy approach $100 \%$ ($\delta \to 0$), implies adversarial accuracy falls to $0\%$. If $p = 0.95$, then for any standard accuracy more than $1 - \delta$, robust accuracy is 
+atmost $19\delta$.                                 
 
+Results from both the papers [^ScSaTsTaMa2018], [^TsSaEnTuMa2019] are not learning algorithm dependent. Hence can be extended to deep neural network. 
 
 
 
