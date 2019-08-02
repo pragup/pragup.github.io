@@ -41,16 +41,15 @@ Let $f_{\hat{w}}(x) = sgn(<\hat{w}, x>)$ is a linear classifier where $f_{\hat{w
 in Theorm $4$.
 ![ArtSchmidt_Fig_1](https://pragup.github.io/images/ART_Schmidt_Theorm_4.PNG)
 ### ROBUST GENERALIZATION ###
-$l_{\infty}^{\epsilon}$ are $l_{\infty}$ perturbation of input $x$ within $B_{\infty}^{\epsilon}(x)$ = {$ x' \in R^d $ $ \mid $ $\mid{x - x'}\mid_{\infty}$   $\leq \epsilon $}  ball. For $l_{\infty}^{\epsilon}$ robust classification
-error requires significantly more samples shown by Theorm $5, 6$.      
+$l_{\infty}^{\epsilon}$ are $l_{\infty}$ perturbation of input $x$ within $B_{\infty}^{\epsilon}(x)$ = {$ x' \in R^d $ $ \mid $ $\mid{x - x'}\mid_{\infty}$   $\leq \epsilon $}  ball. For $l_{\infty}^{\epsilon}$
+robust classification error requires significantly more samples shown by Theorm $5, 6$.      
 ![ArtSchmidt_Fig_1](https://pragup.github.io/images/ART_Schmidt_Theorm_5.PNG)
 ![ArtSchmidt_Fig_2](https://pragup.github.io/images/ART_Schmidt_Theorm_6.PNG)
 
 By theorm $5, 6$ sample complexity $n$ is bounded as $\frac{c}{log(d)} \leq \frac{n}{\epsilon^2 \sqrt{d}}\leq  c'$. 
-When perturbation has $l_{\infty}$, then sample complexity of robust generalization is larger than that of standard generalization by $\sqrt(d)$ i.e polynomial in dimension. This shows that high dimensionality problem require
-significantly large amount of samples for adversarial robustness. More over they also shows using Theorm $11$ that given $n$ samples there is a single adversarial perturbation that
-* Can be applied to all learning algorithms and  
-* Have constant number of samples being misclassified.  
+When perturbation has $l_{\infty}$, then sample complexity of robust generalization is larger than that of standard generalization by $\sqrt{d}$ i.e polynomial in dimension. This shows that high dimensionality problem require
+significantly large amount of samples for adversarial robustness. More over they also shows using Theorm $11$ that given $n$ samples there is a single adversarial perturbation that *can be applied to all learning*
+*algorithms and have constant number of samples being misclassified*.  
 ![ArtSchmidt_Fig_3](https://pragup.github.io/images/ART_Schmidt_Theorm_11.PNG)
 
 
