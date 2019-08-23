@@ -9,6 +9,10 @@ paperurl: 'https://arxiv.org/pdf/1908.07452.pdf'
 citation: 'Prashant Gupta, Bala Krishnamoorthy. (2019). &quot;Continuous Toolpath Planning in Additive Manufacturing.&quot; <i>arXiv</i>. 1(1)'
 ---
 
+![First Figure 1]( https://pragup.github.io/images/PyramidPlan.jpg)
+
+![First Figure 2]( https://pragup.github.io/images/PrintedPyramid.jpg )
+
 We develop a framework that creates a new polygonal mesh representation of the 3D domain of a layer-by-layer 3D printing job on which we identify single, continuous tool paths covering each connected piece of the domain in every layer.
 We present a tool path algorithm that traverses each such continuous tool path with no crossovers. The key construction at the heart of our framework is a novel Euler transformation that we introduced recently in a separate manuscript. 
 Our Euler transformation converts a $2$-dimensional cell complex K into a new $2$-complex $\hat{K}$ such that every vertex in the $1$-skeleton $\hat{G}$ of $\hat{K}$ has degree $4$. Hence $\hat{G}$ is Eulerian, and an Eulerian tour can
