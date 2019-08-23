@@ -9,7 +9,7 @@ paperurl: 'https://arxiv.org/pdf/1908.07452.pdf'
 citation: 'Prashant Gupta, Bala Krishnamoorthy. (2019). &quot;Continuous Toolpath Planning in Additive Manufacturing.&quot; <i>arXiv</i>. 1(1)'
 ---
 
-![First Figure 1]( https://pragup.github.io/images/PyramidPlan.jpg)
+![First Figure 1]( https://pragup.github.io/images/PyramidPlan.png )
 
 ![First Figure 2]( https://pragup.github.io/images/PrintedPyramid.jpg )
 
