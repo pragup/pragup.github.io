@@ -53,8 +53,9 @@ Let $f, g: X \to Y$ be continuous maps from topological space $X$ to space $Y$. 
 $H(x, 0) = f(x)$ and $H(x, 1) = g(x) \forall x \in X$. This implies $f$ is homotopy equivalent to $g$ i.e $f \simeq g$. Equivalence relation implies reflexive, symmetric, transitive.
 Now we extend definition of homotopy to topological spaces.$Y \subseteq X$ is a retract of $X$ if there is a continuous map $r: X \to Y$ with $r(y) = y ~~\forall y \in Y$, then $r$ 
 is a retraction. An example is shown in Figure 2.a .$Y$ is a deformation retract of $X$ and $r$ is deformation retraction, if there is a homotopy between the retract $r$ and the 
-identity map ${id}_{X}$ on $X$ that is $r \simeq {id}_{X}$.
-<!-- i.e  Deformation retraction implies homotopy equivalence between topological space $X \simeq Y$. Some examples are shown in 
+identity map ${id}_{X}$ on $X$ that is $r \simeq s$.
+
+<!-- i.e  $r \simeq {id}_{X}$ Deformation retraction implies homotopy equivalence between topological space $X \simeq Y$. Some examples are shown in 
 Figure 2. $X$ and $Y$ homotopy equivalent or have the same homotopy type, if there exists continuous maps $f: X \to Y$ and $g: Y \to X$ such that $f \circ g \simeq {id}_{Y}$ and 
 $g \circ f \simeq {id}_{X}$. Denoted by $X \simeq Y$. Some examples are shown in Figure 3.
 -->
