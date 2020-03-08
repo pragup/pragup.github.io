@@ -20,7 +20,7 @@ Robot Arm; Latombe, 1991. Robot arm consists of $4$ bars with endpoints as revol
 Then each bar is allowed to move in a circle ($S^1$) independently and its configuration space is $X =  S^1 \times S^1 \times S^1 \times S^1$ i.e a $4$-dimensional torus. 
 If each bar is allowed motion in $3$ dimension then its configuration space is $X =  S^2 \times S^2 \times S^2 \times S^2$. Note: self-intersection of the arm is allowed.
 
-![Figure 1]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure1.PNG "Figure 1:")
+![Figure 1]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure1.PNG "caption")
 
 Let $W$ is a topological space and $X = F(W, n)$ denote Cartesian product $W \times ...... \times W$, $n$ times  contains tuple $(w_1,....., w_n)$ such that $w_i \neq w_j$ 
 whenever $i \neq j$. $X = F(W, n)$ is usual configuration space for collision free motion of $n$ particles.
