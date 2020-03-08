@@ -10,6 +10,8 @@ tags:
   - Computational Topology
 ---
 
+{% include mathjax.html %}
+
 ## Introduction ##
 Topology is usually discussed in robotics through the notion of configuration spaces. For any mechanical system $R$, configuration space is the variety of all possible states ($X$).
 In general, $X$ is determined by real parameters which can be stated as a subset of Euclidian space($\mathbb{R}^k$ )
