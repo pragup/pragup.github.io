@@ -9,6 +9,7 @@ tags:
   - Applied Algebraic Topology
   - Computational Topology
 ---
+{% include lib/mathjax.html %}
 
 ## Introduction ##
 Topology is usually discussed in robotics through the notion of configuration spaces. For any mechanical system $R$, configuration space is the variety of all possible states ($X$).
