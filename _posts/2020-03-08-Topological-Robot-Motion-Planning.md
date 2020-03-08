@@ -19,11 +19,15 @@ Examples:
 Robot Arm; Latombe, 1991. Robot arm consists of $4$ bars with endpoints as revolving joints as shown in Figure 1. If the bar is only allowed motion in a $2$ dimensional plane. 
 Then each bar is allowed to move in a circle ($S^1$) independently and its configuration space is $X =  S^1 \times S^1 \times S^1 \times S^1$ i.e a $4$-dimensional torus. 
 If each bar is allowed motion in $3$ dimension then its configuration space is $X =  S^2 \times S^2 \times S^2 \times S^2$. Note: self-intersection of the arm is allowed.
+
 .center[
+
 ![Figure 1]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure1.PNG )
+
 .caption[
 **Fig. 1:** Image caption
 ]
+
 ]
 
 
