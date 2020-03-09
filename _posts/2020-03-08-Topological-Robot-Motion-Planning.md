@@ -221,11 +221,6 @@ $$TC(M) \leq \sum_{r \in Crit(F)} N_r$$
 Here $Crit(F) \subset \mathbb{R}$ denotes the set of critical values of $F$ and for $r \in Crit(F)$ the symbol $N_r$ denotes the maximum of the 
 numbers ${TC}_M(S_i)$ where $i$ runs over indices satisfying $c_i = r$ i.e 
 
-$$N_r = \max_{c_i =r}\{{TC}_M(S_i)\}$$
-
-Imagine, image of $F$ for some $S_i$ is the height $r$. $N_r$ is maximum relative topological complexity of all possible $S_i$ at a given height $r$.
-Topological complexity $M$ is less than or equal to the sum of $N_r$'s at all possible heights.  
-
 ## References ##
 
 [^Ra2018]: Ralph L. Cohen, , 2018. Algebraic topological aspects of morse theory. [http://virtualmath1.stanford.edu/~ralph/morsecourse/biglectures.pdf](http://virtualmath1.stanford.edu/~ralph/morsecourse/biglectures.pdf)
