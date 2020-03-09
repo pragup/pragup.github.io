@@ -214,12 +214,14 @@ where $$v=({v}_{x^*}, {v}_{y^*})$$
 
 ### Lemma 5.2 ###
 Let $F: M \times M \to \mathbb{R}$ be a navigation function for $M$. Consider the connected components $S_1, S_2, ....., S_k \subset M \times M$
-of the set of critical points of $F$ and denote by $c_i \in \mathbb{R}$ the corresponding critical values, i.e, $F(S_i) = \{c_i\}$ [3]. Then one has 
+of the set of critical points of $F$ and denote by $c_i \in \mathbb{R}$ the corresponding critical values, i.e, $F(S_i) = \{c_i\}$ [^Mi2014]. Then one has 
 
 $$TC(M) \leq \sum_{r \in Crit(F)} N_r$$
 
 Here $Crit(F) \subset \mathbb{R}$ denotes the set of critical values of $F$ and for $r \in Crit(F)$ the symbol $N_r$ denotes the maximum of the 
 numbers ${TC}_M(S_i)$ where $i$ runs over indices satisfying $c_i = r$ i.e 
+$$N_r = \max_{c_i =r} \{{TC}_M(S_i)\}$$
+
 
 ## References ##
 
