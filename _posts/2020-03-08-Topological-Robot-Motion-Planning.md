@@ -218,10 +218,10 @@ of the set of critical points of $F$ and denote by $c_i \in \mathbb{R}$ the corr
 
  $$TC(M) \leq \sum_{r \in Crit(F)} N_r$$
 
-Here $Crit(F) \subset \mathbb{R}$ denotes the set of critical values of $F$ and for $r \in Crit(F)$ the symbol $N_r$ denotes the maximum of the 
+<!-- Here $Crit(F) \subset \mathbb{R}$ denotes the set of critical values of $F$ and for $r \in Crit(F)$ the symbol $N_r$ denotes the maximum of the 
 numbers ${TC}_M(S_i)$ where $i$ runs over indices satisfying $c_i = r$ i.e 
 
- $$N_r = \max_{c_i =r}\{{TC}_M(S_i)\}$$
+$$N_r = \max_{c_i =r}\{{TC}_M(S_i)\}$$
 
 Imagine, image of $F$ for some $S_i$ is the height $r$. $N_r$ is maximum relative topological complexity of all possible $S_i$ at a given height $r$.
 Topological complexity $M$ is less than or equal to the sum of $N_r$'s at all possible heights.  
@@ -237,7 +237,7 @@ Let $J = \{1, 2\}$, then $F(S_J) = 4x^2_1+ 4x^2_2 = 4 \times 2 = 8$, since $x_1,
 We can clearly see that $F(S_J) = 4|J|$. Hence critical values $Crit(F) = \{0, 4, 8, ........, 4n\}$ and number of critical values are $n + 1$. 
 We can clearly see that first and second projections $g, \tilde{g}$ of $S_J \to M$ are homotopic, hence $TC_M(S_J) = 1$ based on lemma 4.2. 
 This implies that $N_r = 1$ for any $r\in Crit(F)$, hence by lemma 5.2  $TC(M) \leq n+1$. 
-
+-->
  
 
 ## References ##
