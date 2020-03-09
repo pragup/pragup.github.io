@@ -18,7 +18,7 @@ In general, $X$ is determined by real parameters which can be stated as a subset
 
 Examples:
 
-Robot Arm; Latombe, 1991. Robot arm consists of $4$ bars with endpoints as revolving joints as shown in Figure 1 [Figure 1]. If the bar is only allowed motion in a $2$ dimensional plane. 
+Robot Arm; Latombe, 1991. Robot arm consists of $4$ bars with endpoints as revolving joints as shown in Figure 1. If the bar is only allowed motion in a $2$ dimensional plane. 
 Then each bar is allowed to move in a circle ($S^1$) independently and its configuration space is $X =  S^1 \times S^1 \times S^1 \times S^1$ i.e a $4$-dimensional torus. 
 If each bar is allowed motion in $3$ dimension then its configuration space is $X =  S^2 \times S^2 \times S^2 \times S^2$. Note: self-intersection of the arm is allowed.
 
@@ -42,7 +42,7 @@ $\gamma \in PX$ is mapped to $(\gamma(0), \gamma(1)) \in X\times X$. Then $\pi$ 
 
 
 
-#### Definition 2.1 #####
+### Definition 2.1 ###
 The motion planning algorithm [3] is a section of a fibration.
 Let $s$ motion planning algorithm i.e a map \[s: X \times X \to PX\] where \[\pi \circ s  = 1_{X \times X}\]
 Note $ s(A, B) = \gamma \in PX $ where $\gamma $ is a continuous function of $t \in I$ for given points $A, B \in X$.
@@ -69,11 +69,49 @@ $$g \circ f \simeq {id}_{X}$$. Denoted by $X \simeq Y$. Some examples are shown 
 |![Figure 2d]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure2d.PNG)| 
 |:--:| 
 | *Figure 2.d* |
-| Figure 2 : $Y$ is not a deformation retraction of $X$ but just a retraction, whereas $Y_i$ $\forall i \in {1, 2, 3, 4}$  is deformation retraction of $X$. Hence $$X \simeq Y_i ~~\forall i$$  [^Ba2018]|
+| Figure 2 : $Y$ is not a deformation retraction of $X$ but just a retraction, whereas $Y_i$ $\forall i \in {1, 2, 3, 4}$  is deformation retraction of $X$. Hence $$X \simeq Y_i ~~\forall i$$  [Ba2018]|
+
+|![Figure 3]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure3.PNG)| 
+|:--:| 
+| Figure 3: $X \simeq Y$(homotopy equivalent) but $Y$ is not a retract of $X$ in the figure on right implies deformation retract is not a necessary condition for homotopy equivalence. [Ba2018] |
+
+
+### Definition 2.2 ###
+
+If $Y$ is a single point and $X \simeq Y$, then $X$ is contractible. Some examples are shown in figure 4.[Ba2018]
+
+|![Figure 4]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure4.PNG)| 
+|:--:| 
+| *Figure 4* |
+
+### Lemma 2.3 ###
+A continuous motion planning algorithm in $X$ exists if and only if space $X$ is contractible. For a system with a non-contractible configuration space, any motion planning algorithm 
+must be discontinuous .[Mi2014]
+
+
+## Topological Complexity TC(X) ##
+Polyhedral is a subset $X \subset \mathbb{R}^n$, homeomorphic to underline space of some finite-dimensional simplicial complex. 
+
+### Definition 3.1 ###
+Let $X$ be a polyhedron. A motion planning algorithm $s: X \times X \to PX$ is called tame if $X \times X$ can be split into finitely many sets [Mi2014]
+\[X \times X = F_1 \cup F_2 \cup ..... \cup F_k\] such that
+1. The restriction $s|F_i : F_i \to PX$ is continuous, $i \in \{1, ..... , k\}$
+2. $F_i \cap F_j = \emptyset$, where $i \neq j$
+3. Each $F_i$ is a Euclidean Neighborhood Retract (ENR), defined below. 
+
+Let $A \subset X$. Then A is a neighborhood retract (in $X$), if $A$ has a neighborhood($N_A$) in $X$ and $N_A$ is a retract of $X$. Every retract is also a neighborhood retract 
+but every neighborhood retract not necessarily a retract. For example: $X = [0 ,1]$ and $A = \{0\} \cup \{1\}$ then A is a neighborhood retract but not a retract. Since map 
+$r$(retract) is not continuous. If $X = \mathbb{R}^n$, then $A$ is euclidean neighborhood retract [AD1995].
+
+The topological complexity of the tame motion planning algorithm($s$) is the minimum number of domains($k$) such that $s$ is continuous for each domain. Topological complexity ($TC(X)$) of finite-dimensional polyhedron $X$ is minimal topological complexity of tame motion planning algorithms in $X$.[3]
 
 
 
+Some of the topological complexity $TC(X)$ examples:
 
+If X is contractible then by lemma 2.3 there exists a continuous tame motion planning algorithm. Hence $TC(X) = 1$
+Given topological space $X = S^n$, where $n$ is odd. Consider $F_1 = \{(A, B)\mid A \neq -B\}$. Then $s_1: F_1 \to PX$ where $s_1(A, B)$ is a shortest geodesic arc along the surface of $S^n$. Consider $F_2 = \{(A, -A)\}$ i.e pair of all antipodal points. We will find $s_2: F_2 \to PX$. Construct non vanishing vector field $v$ on $S^n$. Then $s_2(A, -A)$ move along the semi circle tangent to vector $v(A)$ from $A$ to $-A$ . And $X \times X = F_1 \cup F_2$, $TC(X) = 2$. Note: $v$ is non vanishing since n is odd.  
+Given topological space $X = S^n$, where $n$ is even. Since $n$ is even any vector field $v$ has at least one zero. We may construct a vector field $v$ with one zero at $A_0$ i.e $v(A_0) = 0$. Then $F_1$ remains same as in second and $F_2 = \{(A, -A) \mid A \neq A_0\}$. Consider $F_3 = \{(A_0, -A_0)\}$ and $s_3: F_3 \to PX$ is defined by an arbitrary path from $A_0$ to $-A_0$. And $X \times X = F_1 \cup F_2 \cup F_3$, $TC(X) = 3$. Note: $v$ has one zero since n is even based on Hairy Ball Theorem. 
 
 ## References ##
 
