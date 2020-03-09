@@ -147,7 +147,7 @@ $X \times X = F_1 \cup F_2$ since $X$ has antipodal points. But $Y$ has no antip
 If $ Y \subset X$ is a retract and $X$ can be deformed into $Y$. Then $TC(Y) = TC(X)$. It is also true, if topological space $X$ and $Y$ are homotopy equivalent 
 then $TC(X) = TC(Y)$.[Mi2014]
 Consider a topological space $Y$ homeomorphic to sphere($S^2$). That implies $Y$ is homotopy equivalent to $S^2$. Hence $TC(S^2) = TC(Y)$.
-
+<!--
 ## Relative Topological Complexity ($$TC_X(A)$$) ##
 
 ### Definition 4.1 ###
@@ -187,7 +187,7 @@ Let critical points set is $S$ of smooth function $f: M \to \mathbb{R}$ and $S_i
 
 Then $f$ is a Morse-Bott function, if $H_pf(v) \neq 0$ where $\forall v \in N_p(S_i)$ i.e Hessian is non-degenerate in the normal direction (Equivalently, the kernel of the Hessian at a critical point equals the tangent space to the critical submanifold i.e $T_p(S_i) = Ker(H_pf)$). 
 A Morse function is a special case which has no kernel [^Wi2019].
-<!--
+
 ### Definition 5.1 ###
 
 Navigation Function [^Mi2014]:  A smooth function $F: M \times M \to \mathbb{R}$ is called a navigation function for $M$ if
