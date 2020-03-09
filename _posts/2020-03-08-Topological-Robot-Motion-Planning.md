@@ -148,8 +148,11 @@ $X \times X = F_1 \cup F_2$ since $X$ has antipodal points. But $Y$ has no antip
 If $ Y \subset X$ is a retract and $X$ can be deformed into $Y$. Then $TC(Y) = TC(X)$. It is also true, if topological space $X$ and $Y$ are homotopy equivalent 
 then $TC(X) = TC(Y)$.[Mi2014]
 Consider a topological space $Y$ homeomorphic to sphere($S^2$). That implies $Y$ is homotopy equivalent to $S^2$. Hence $TC(S^2) = TC(Y)$.
+
+
+## Relative Topological Complexity ($$TC_X(A)$$) ##
  
- 
+
 ## References ##
 
 [^Ra2018]: Ralph L. Cohen, , 2018. Algebraic topological aspects of morse theory. [http://virtualmath1.stanford.edu/~ralph/morsecourse/biglectures.pdf](http://virtualmath1.stanford.edu/~ralph/morsecourse/biglectures.pdf)
