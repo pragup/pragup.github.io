@@ -116,7 +116,130 @@ Given topological space $X = S^n$, where $n$ is even. Since $n$ is even any vect
 $A_0$ i.e $v(A_0) = 0$. Then $F_1$ remains same as in second and $F_2 = \{(A, -A) \mid A \neq A_0\}$. Consider $F_3 = \{(A_0, -A_0)\}$ and $s_3: F_3 \to PX$ is defined 
 by an arbitrary path from $A_0$ to $-A_0$. And $X \times X = F_1 \cup F_2 \cup F_3$, $TC(X) = 3$. Note: $v$ has one zero since n is even based on **Hairy Ball Theorem**.
 
-Topological complexity is Homotopy invariant. 
+Topological complexity is Homotopy invariant.
+
+<!--
+### Lemma 3.2 ###
+
+Let $X$ and $Y$ be topological spaces. Suppose that $X$ dominates $Y$  i.e there exist continuous maps $f: X \to Y$ and $g: Y \to X$ such that $f \circ g \sim {id}_Y$. 
+Then $TC(Y) \leq TC(X)$.[^Mi2017]
+
+An example is shown in figure 5.
+
+|![Figure 5a]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate1.PNG ) | 
+|:--:| 
+| *Figure 5.a* |
+|![Figure 5b]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate2.PNG ) | 
+|:--:| 
+| *Figure 5.b* |
+|![Figure 5c]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate3.PNG ) | 
+|:--:| 
+| *Figure 5.c* |
+| Figure 5: $X$(unit circle) and $Y$(straight line) are topological space in blue and red. $f$ is a continuous map that projects every point of $X$ vertically on $Y$ as shown by 
+green edges in middle figure. $g$ is continuous map that projects every points of $Y$ vertically onto upper semi circle $X$ as shown by green edges in right most figure. Then 
+$f \circ g \sim {id}_Y$ i.e $X$ dominates $Y$ and $TC(X) =2$, $TC(Y) = 1$.|
+
+### Lemma 3.3 ###
+If $ Y \subset X$ is a retract. Then $TC(Y) \leq TC(X)$.[^Mi2014]
+Consider Figure 2.a, where $X$ is a unit circle and $Y$ is an arc smaller than half of the unit circle circumference. Based on example 2 of topological complexity 
+$X \times X = F_1 \cup F_2$ since $X$ has antipodal points. But $Y$ has no antipodal points, hence $Y \times Y = F_1$. Hence $TC(Y) = 1$ and $TC(X) =2$.  
+
+### Corollary 3.4 ###
+If $ Y \subset X$ is a retract and $X$ can be deformed into $Y$. Then $TC(Y) = TC(X)$. It is also true, if topological space $X$ and $Y$ are homotopy equivalent 
+then $TC(X) = TC(Y)$.[Mi2014]
+Consider a topological space $Y$ homeomorphic to sphere($S^2$). That implies $Y$ is homotopy equivalent to $S^2$. Hence $TC(S^2) = TC(Y)$.
+
+
+## Relative Topological Complexity ($$TC_X(A)$$) ##
+
+### Definition 4.1 ###
+Let $X$ be a topological space  and $A \subset X \times X$ be subspace. Then the number ${TC}_{X}(A)$ is defined as the fibration $\pi: P_{A}X \to A$ where 
+${P_A}X \subset PX$ is the space of all paths $\gamma : [0, 1] \to X$ such that the pair if end points $(\gamma(0), \gamma(1))$ lies in $A$. In other words 
+${TC}_X(A)$ is the smallest integer $k$ such that there is an open cover $A = U_1 \cup ............ \cup U_k$ where $U_i \subset A$ is open and projections 
+$g: U_i \to X, \tilde{g}: U_i \to \tilde{X}$ are homotopic where $\tilde{X} = X,  A\subset X \times \tilde{X}$.[3] 
+
+We can clearly see that $TC(X) = {TC}_{X}(X \times X)$
+
+If $A_1, .... , A_k \subset X \times X$ are open covers covering $X \times X$, then $$ TC(X) \leq TC_X(A_1)+ ....... + TC_X(A_k) $$
+
+### Lemma 4.2 ###
+
+For a subset $A \subset X \times X$ the following properties are equivalent [^Mi2014]:
+
+1. ${TC}_X (A) = 1$.
+2. Projections $g: A \to X, \tilde{g}: A \to \tilde{X}$ are homotopic where $\tilde{X} = X,  A\subset X \times \tilde{X}$. (It is true by definition 4.1)
+3. The inclusion $A \to X \times X$ is homotopic to a map $A \to X \times X$ with values in the diagonal $\Delta_{X} \subset X \times X$.
+
+## Navigation Function ##
+Before we start talking about navigation functions we will define few things from differential geometry. 
+For a real valued smooth function $f: M \to \mathbb{R}$ on a differentiable manifold $M$, the points where the differential of $f$ (${df}_p : T_p(M) \to \mathbb{R}$)
+vanishes are called critical points of $f$ and their images under $f$ are called critical values. 
+$\Delta_p(f) $ is the gradient vector field determined by $f$. Given the Riemannian metric $<. , .>$, ${df}_p(v)$ is determined by the property that
+
+$$ <\Delta_p(f), v> = {df}_p(v) $$,
+
+$$ {df}_p(v) = \sum_{i =1}^{n} v_i\frac{\partial f}{\partial {x_i}}$$
+
+If at a critical point $p$, the matrix of second partial derivatives( Hessian Matrix $H_pf$) is nonsingular, then $p$ is called a non-degenerate critical point; 
+if the Hessian is singular then $p$ is a degenerate critical point. A smooth real-valued function on manifold $M$ is a Morse function if it has no degenerate critical points. 
+For the functions from $\mathbb{R} \to \mathbb{R}$, f has a critical point at the origin if $b = 0$, which is non-degenerate if $c \neq 0$ (i.e $f$ is of the form $a + cx^2+ ...$) 
+and degenerate if $c = 0$ (i.e $f$ is of the form $a + dx^3+ ....$)[^Wi2019].
+
+Let critical points set is $S$ of smooth function $f: M \to \mathbb{R}$ and $S_i$ is non-degenerate connected submanifold in $S$. Let $p \in S_i$, then $T_p(M) = T_p(S_i) + N_p(S_i)$, where $T_p(M)$ is tangential space of $M$ and $N_p(S_i)$ is normal bundle of $S_i$.
+
+Then $f$ is a Morse-Bott function, if $H_pf(v) \neq 0$ where $\forall v \in N_p(S_i)$ i.e Hessian is non-degenerate in the normal direction (Equivalently, the kernel of the Hessian at a critical point equals the tangent space to the critical submanifold i.e $T_p(S_i) = Ker(H_pf)$). 
+A Morse function is a special case which has no kernel [^Wi2019].
+
+### Definition 5.1 ###
+
+Navigation Function [^Mi2014]:  A smooth function $F: M \times M \to \mathbb{R}$ is called a navigation function for $M$ if
+
+1. $F(x, y) \geq 0$ for all $x, y \in M$
+2. $F(x, y) = 0$ if and only if $x = y$
+3. $F$ is nondegenerate in the sense of Morse-Bott function. 
+
+
+Set of critical points of $F$ belongs to a set  of connected components $\{S_i\}$, where $S_i$ is submanifold and 
+$ S_i \subset M \times M$. We are also assuming that that $S_1 = \Delta_{M}$, where $\Delta_{M} = \{(x, x); x \in M \}$. 
+
+Gradient vector Field ($\Delta_p F$) of $F$ at point $p$ is 
+
+$$\Delta_p F = \sum_{i =1}^{k} \frac{\partial F}{\partial x_i} e_i + \sum_{i =1}^{k} \frac{\partial F}{\partial y_i} e_{i + k}$$
+
+where $p=(x^*_1, ...... , x^*_k, y^*_1, ......, y^*_k)= (x^*, y^*)$, $v_{x^*} \in T_{x^*}(M), v_{y^*} \in T_{y^*}(M)$ and $(v_{x^*}, v_{y^*}) \in T_p(M \times M)$
+
+$$\sum_{i =1}^{k} \frac{\partial F}{\partial x_i} {v}^i_{x^*} + \sum_{i =1}^{k} \frac{\partial F}{\partial y_i} {v}^i_{y^*} = dF_p(v)$$
+
+where $v=({v}_{x^*}, {v}_{y^*})$
+
+
+### Lemma 5.2 ###
+Let $F: M \times M \to \mathbb{R}$ be a navigation function for $M$. Consider the connected components $S_1, S_2, ....., S_k \subset M \times M$
+of the set of critical points of $F$ and denote by $c_i \in \mathbb{R}$ the corresponding critical values, i.e, $F(S_i) = \{c_i\}$ [3]. Then one has 
+
+$$TC(M) \leq \sum_{r \in Crit(F)} N_r$$
+
+Here $Crit(F) \subset \mathbb{R}$ denotes the set of critical values of $F$ and for $r \in Crit(F)$ the symbol $N_r$ denotes the maximum of the 
+numbers ${TC}_M(S_i)$ where $i$ runs over indices satisfying $c_i = r$ i.e 
+
+$$N_r = \max_{c_i =r}\{{TC}_M(S_i)\}$$
+
+Imagine, image of $F$ for some $S_i$ is the height $r$. $N_r$ is maximum relative topological complexity of all possible $S_i$ at a given height $r$.
+Topological complexity $M$ is less than or equal to the sum of $N_r$'s at all possible heights.  
+
+**Example**: Consider a navigation function $F : M \times M \to \mathbb{R}$ , where $M = S^1\times ...... \times S^1 = T^n$  ($n$- dimensional torus)
+is given by $$F(x, y) = \sum_{i=1}^{k}(x_i - y_i)^2$$
+$$dF_p(v) = \sum_{i =1}^{k} 2(x^*_i - y^*_i) {v}^i_{x^*} - \sum_{i =1}^{k} 2(x^*_i - y^*_i) {v}^i_{y^*} = \sum_{i =1}^{k} 2(x^*_i - y^*_i) ({v}^i_{x^*} - {v}^i_{y^*}) ~~ (1)$$        
+Then, for $dF_p(v) = 0$ i.e $p=(x^*, y^*)$ is a critical point. It is true if and only if euclidean segment $[x^*, y^*] \subset R^n$ are perpendicular to 
+tangent space to $M$ at point $x^*$(i.e $T_{x^*}(M)$) and $y^*$(i.e $T_{y^*}(M)$). It is clear from $dF_p(v)$ equation 1.
+$x = (x_1, ....... , x_n) \in M, y = (y_1, ......... , y_n) \in M$ and $(x_i, y_i) \in M_i$, where $M_i$ is the $i^{th}$  $S^1$ in configuration space of $M$.
+Let $J \subseteq \{1, .....,n\}$ and $S_J$ is critical submanifold of $M$, where $x_i = -y_i \forall i \in J$ and $x_i = y_i \forall i \notin J$ by equation 1.
+Let $J = \{1, 2\}$, then $F(S_J) = 4x^2_1+ 4x^2_2 = 4 \times 2 = 8$, since $x_1, x_2$ lies on a unit circle $S^1$ implies $x^2_1 = 1$ and $x^2_2 = 1$. 
+We can clearly see that $F(S_J) = 4|J|$. Hence critical values $Crit(F) = \{0, 4, 8, ........, 4n\}$ and number of critical values are $n + 1$. 
+We can clearly see that first and second projections $g, \tilde{g}$ of $S_J \to M$ are homotopic, hence $TC_M(S_J) = 1$ based on lemma 4.2. 
+This implies that $N_r = 1$ for any $r\in Crit(F)$, hence by lemma 5.2  $TC(M) \leq n+1$. 
+-->
+ 
 
 ## References ##
 
