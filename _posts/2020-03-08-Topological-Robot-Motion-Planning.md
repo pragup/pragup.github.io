@@ -137,8 +137,19 @@ An example is shown in figure 5.
 | Figure 5: $X$(unit circle) and $Y$(straight line) are topological space in blue and red. $f$ is a continuous map that projects every point of $X$ vertically on $Y$ as shown by 
 green edges in middle figure. $g$ is continuous map that projects every points of $Y$ vertically onto upper semi circle $X$ as shown by green edges in right most figure. Then 
 $f \circ g \sim {id}_Y$ i.e $X$ dominates $Y$ and $TC(X) =2$, $TC(Y) = 1$.|
- 
 
+
+### Lemma 3.3 ###
+If $ Y \subset X$ is a retract. Then $TC(Y) \leq TC(X)$.[^Mi2014]
+Consider Figure 2.a, where $X$ is a unit circle and $Y$ is an arc smaller than half of the unit circle circumference. Based on example 2 of topological complexity 
+$X \times X = F_1 \cup F_2$ since $X$ has antipodal points. But $Y$ has no antipodal points, hence $Y \times Y = F_1$. Hence $TC(Y) = 1$ and $TC(X) =2$.  
+
+### Corollary 3.4 ###
+If $ Y \subset X$ is a retract and $X$ can be deformed into $Y$. Then $TC(Y) = TC(X)$. It is also true, if topological space $X$ and $Y$ are homotopy equivalent 
+then $TC(X) = TC(Y)$.[Mi2014]
+Consider a topological space $Y$ homeomorphic to sphere($S^2$). That implies $Y$ is homotopy equivalent to $S^2$. Hence $TC(S^2) = TC(Y)$.
+ 
+ 
 ## References ##
 
 [^Ra2018]: Ralph L. Cohen, , 2018. Algebraic topological aspects of morse theory. [http://virtualmath1.stanford.edu/~ralph/morsecourse/biglectures.pdf](http://virtualmath1.stanford.edu/~ralph/morsecourse/biglectures.pdf)
