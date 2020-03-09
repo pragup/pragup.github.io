@@ -187,7 +187,7 @@ Let critical points set is $S$ of smooth function $f: M \to \mathbb{R}$ and $S_i
 
 Then $f$ is a Morse-Bott function, if $H_pf(v) \neq 0$ where $\forall v \in N_p(S_i)$ i.e Hessian is non-degenerate in the normal direction (Equivalently, the kernel of the Hessian at a critical point equals the tangent space to the critical submanifold i.e $T_p(S_i) = Ker(H_pf)$). 
 A Morse function is a special case which has no kernel [^Wi2019].
-
+<!--
 ### Definition 5.1 ###
 
 Navigation Function [^Mi2014]:  A smooth function $F: M \times M \to \mathbb{R}$ is called a navigation function for $M$ if
@@ -212,7 +212,6 @@ where $v=({v}_{x^*}, {v}_{y^*})$
 
 
 ### Lemma 5.2 ###
-<!--
 Let $F: M \times M \to \mathbb{R}$ be a navigation function for $M$. Consider the connected components $S_1, S_2, ....., S_k \subset M \times M$
 of the set of critical points of $F$ and denote by $c_i \in \mathbb{R}$ the corresponding critical values, i.e, $F(S_i) = \{c_i\}$ [3]. Then one has 
 
