@@ -44,7 +44,7 @@ $\gamma \in PX$ is mapped to $(\gamma(0), \gamma(1)) \in X\times X$. Then $\pi$ 
 
 ### Definition 2.1 ###
 The motion planning algorithm [^Mi2014] is a section of a fibration.
-Let $s$ motion planning algorithm i.e a map $s: X \times X \to PX$ where $\pi \circ s  = 1_{X \times X}$
+Let $s$ motion planning algorithm i.e a map $s: X \times X \to PX$ where $\pi \circ s  = 1_{X \times X}$.
 Note $ s(A, B) = \gamma \in PX $ where $\gamma $ is a continuous function of $t \in I$ for given points $A, B \in X$.
 And $s$ is continuous, if suggested route($s(A, B)$) depends continuously on states $A$ and $B$.
 Under what condition $s$ is continuous?. We will talk about it before that few definitions.
@@ -114,7 +114,42 @@ surface of $S^n$. Consider $F_2 = \{(A, -A)\}$ i.e pair of all antipodal points.
 $s_2(A, -A)$ move along the semi circle tangent to vector $v(A)$ from $A$ to $-A$ . And $X \times X = F_1 \cup F_2$, $TC(X) = 2$. Note: $v$ is non vanishing since n is odd.  
 Given topological space $X = S^n$, where $n$ is even. Since $n$ is even any vector field $v$ has at least one zero. We may construct a vector field $v$ with one zero at 
 $A_0$ i.e $v(A_0) = 0$. Then $F_1$ remains same as in second and $F_2 = \{(A, -A) \mid A \neq A_0\}$. Consider $F_3 = \{(A_0, -A_0)\}$ and $s_3: F_3 \to PX$ is defined 
-by an arbitrary path from $A_0$ to $-A_0$. And $X \times X = F_1 \cup F_2 \cup F_3$, $TC(X) = 3$. Note: $v$ has one zero since n is even based on **Hairy Ball Theorem**. 
+by an arbitrary path from $A_0$ to $-A_0$. And $X \times X = F_1 \cup F_2 \cup F_3$, $TC(X) = 3$. Note: $v$ has one zero since n is even based on **Hairy Ball Theorem**.
+
+Topological complexity is Homotopy invariant.
+
+### Lemma 3.2 ###
+
+Let $X$ and $Y$ be topological spaces. Suppose that $X$ dominates $Y$  i.e there exist continuous maps $f: X \to Y$ and $g: Y \to X$ such that $f \circ g \sim {id}_Y$. 
+Then $TC(Y) \leq TC(X)$.[^Mi2017]
+
+An example is shown in figure 5.
+
+|![Figure 5a]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure5a.PNG)| 
+|:--:| 
+| *Figure 5.a* |
+|![Figure 5b]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure5b.PNG)| 
+|:--:| 
+| *Figure 5.b* |
+|![Figure 5b]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure5c.PNG)| 
+|:--:| 
+| *Figure 5.c* |
+| Figure 5: $X$(unit circle) and $Y$(straight line) are topological space in blue and red. $f$ is a continuous map that projects every point of $X$ vertically on $Y$ as shown by 
+green edges in middle figure. $g$ is continuous map that projects every points of $Y$ vertically onto upper semi circle $X$ as shown by green edges in right most figure. Then 
+$f \circ g \sim {id}_Y$ i.e $X$ dominates $Y$ and $TC(X) =2$, $TC(Y) = 1$.|
+
+### Lemma 3.3 ###
+If $ Y \subset X$ is a retract. Then $TC(Y) \leq TC(X)$.[^Mi2014]
+Consider Figure 2.a, where $X$ is a unit circle and $Y$ is an arc smaller than half of the unit circle circumference. Based on example 2 of topological complexity 
+$X \times X = F_1 \cup F_2$ since $X$ has antipodal points. But $Y$ has no antipodal points, hence $Y \times Y = F_1$. Hence $TC(Y) = 1$ and $TC(X) =2$.  
+
+### Corollary 3.4 ###
+If $ Y \subset X$ is a retract and $X$ can be deformed into $Y$. Then $TC(Y) = TC(X)$. It is also true, if topological space $X$ and $Y$ are homotopy equivalent 
+then $TC(X) = TC(Y)$.[Mi2014]
+Consider a topological space $Y$ homeomorphic to sphere($S^2$). That implies $Y$ is homotopy equivalent to $S^2$. Hence $TC(S^2) = TC(Y)$.
+
+
+ 
 
 ## References ##
 
