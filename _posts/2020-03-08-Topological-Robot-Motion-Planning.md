@@ -227,7 +227,7 @@ Topological complexity $M$ is less than or equal to the sum of $N_r$'s at all po
 **Example**: Consider a navigation function $F : M \times M \to \mathbb{R}$ , where $M = S^1\times ...... \times S^1 = T^n$  ($n$- dimensional torus)
 is given by $$F(x, y) = \sum_{i=1}^{k}(x_i - y_i)^2$$
 $$dF_p(v) = \sum_{i =1}^{k} 2(x^*_i - y^*_i) {v}^i_{x^*} - \sum_{i =1}^{k} 2(x^*_i - y^*_i) {v}^i_{y^*} = \sum_{i =1}^{k} 2(x^*_i - y^*_i) ({v}^i_{x^*} - {v}^i_{y^*}) ~~ (1)$$        
-Then, for $$dF_p(v) = 0$$ i.e $$p=(x^*, y^*)$$ is a critical point. It is true if and only if euclidean segment $$[x^*, y^*] \subset R^n$$ are perpendicular to 
+Then, for $$dF_p(v) = 0$$ i.e $$p=(x^*, y^*)$$ is a critical point. It is true if and only if euclidean segment $$(x^*, y^*) \subset R^n $$ are perpendicular to 
 tangent space to $M$ at point $x^*$(i.e $$T_{x^*}(M)$$) and $y^*$(i.e $$T_{y^*}(M)$$). It is clear from $$dF_p(v)$$ equation 1.
 $x = (x_1, ....... , x_n) \in M, y = (y_1, ......... , y_n) \in M$ and $(x_i, y_i) \in M_i$, where $M_i$ is the $i^{th}$  $S^1$ in configuration space of $M$.
 Let $J \subseteq \{1, .....,n\}$ and $S_J$ is critical submanifold of $M$, where $x_i = -y_i \forall i \in J$ and $x_i = y_i \forall i \notin J$ by equation 1.
