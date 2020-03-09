@@ -18,7 +18,7 @@ In general, $X$ is determined by real parameters which can be stated as a subset
 
 Examples:
 
-Robot Arm; Latombe, 1991. Robot arm consists of $4$ bars with endpoints as revolving joints as shown in Figure 1. If the bar is only allowed motion in a $2$ dimensional plane. 
+Robot Arm; Latombe, 1991. Robot arm consists of $4$ bars with endpoints as revolving joints as shown in Figure 1 [Figure 1]. If the bar is only allowed motion in a $2$ dimensional plane. 
 Then each bar is allowed to move in a circle ($S^1$) independently and its configuration space is $X =  S^1 \times S^1 \times S^1 \times S^1$ i.e a $4$-dimensional torus. 
 If each bar is allowed motion in $3$ dimension then its configuration space is $X =  S^2 \times S^2 \times S^2 \times S^2$. Note: self-intersection of the arm is allowed.
 
@@ -56,3 +56,39 @@ is a retraction. An example is shown in Figure 2.a .$Y$ is a deformation retract
 identity map ${id}_{X}$ on $X$ i.e $$r \simeq {id}_{X}$$. Deformation retraction implies homotopy equivalence between topological space $X \simeq Y$. Some examples are shown in 
 Figure 2. $X$ and $Y$ homotopy equivalent or have the same homotopy type, if there exists continuous maps $f: X \to Y$ and $g: Y \to X$ such that $$f \circ g \simeq {id}_{Y}$$ and 
 $$g \circ f \simeq {id}_{X}$$. Denoted by $X \simeq Y$. Some examples are shown in Figure 3.
+
+|![Figure 2a]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure2a.PNG)| 
+|:--:| 
+| *Figure 2.a* |
+|![Figure 2b]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure2b.PNG)| 
+|:--:| 
+| *Figure 2.b* |
+|![Figure 2c]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure2c.PNG)| 
+|:--:| 
+| *Figure 2.c* |
+|![Figure 2d]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure2d.PNG)| 
+|:--:| 
+| *Figure 2.d* |
+| *Figure 2 : $Y$ is not a deformation retraction of $X$ but just a retraction, whereas $Y_i$ $\forall i \in {1, 2, 3, 4}$  is deformation retraction of $X$. 
+Hence $$X \simeq Y_i ~~\forall i$$ [^Ba2018]*|
+
+
+
+
+
+## References ##
+
+[^Ra2018]: Ralph L. Cohen, , 2018. Algebraic topological aspects of morse theory. [http://virtualmath1.stanford.edu/~ralph/morsecourse/biglectures.pdf](http://virtualmath1.stanford.edu/~ralph/morsecourse/biglectures.pdf)
+
+[^AD1995]: A. Dold., 1995. Lectures on Algebraic Topology. Classics in Mathematics. Springer Berlin Heidelberg, 1995.
+
+[^Mi2014]: Michael Farber, 2014. Invitation to topological robotics.
+
+[^Mi2017]: Michael Farber, 2017. Configuration spaces and robot motion planning algorithms (Lecture Notes).
+
+[^Ba2018]: Bala Krishnamoorthy, 2018. Computational topology. [http://www.math.wsu.edu/math/faculty/bkrishna/FilesMath574/S18/LecNotes/Lec9_Math574_02062018.pdf](http://www.math.wsu.edu/math/faculty/bkrishna/FilesMath574/S18/LecNotes/Lec9_Math574_02062018.pdf)
+
+[^EH1966]: E. H. Spanier, 1966. Algebraic topology. McGraw Hill.
+
+[^Wi2019]: Wikipedia contributors, accessed 8-December-2019. Morse theory — Wikipedia, the free encyclopedia. [https://en.wikipedia.org/w/index.php?title=Morse_theory&oldid=925851127](https://en.wikipedia.org/w/index.php?title=Morse_theory&oldid=925851127)
+
