@@ -148,6 +148,29 @@ If $ Y \subset X$ is a retract and $X$ can be deformed into $Y$. Then $TC(Y) = T
 then $TC(X) = TC(Y)$.[Mi2014]
 Consider a topological space $Y$ homeomorphic to sphere($S^2$). That implies $Y$ is homotopy equivalent to $S^2$. Hence $TC(S^2) = TC(Y)$.
 
+## Relative Topological Complexity ($TC_X(A)$)##
+
+### Definition 4.1 ###
+Let $X$ be a topological space  and $A \subset X \times X$ be subspace. Then the number ${TC}_{X}(A)$ is defined as the fibration $\pi: P_{A}X \to A$ where 
+${P_A}X \subset PX$ is the space of all paths $\gamma : [0, 1] \to X$ such that the pair if end points $(\gamma(0), \gamma(1))$ lies in $A$. In other words 
+${TC}_X(A)$ is the smallest integer $k$ such that there is an open cover $A = U_1 \cup ............ \cup U_k$ where $U_i \subset A$ is open and projections 
+$g: U_i \to X, \tilde{g}: U_i \to \tilde{X}$ are homotopic where $\tilde{X} = X,  A\subset X \times \tilde{X}$.[3] 
+
+We can clearly see that $TC(X) = {TC}_{X}(X \times X)$
+
+If $A_1, .... , A_k \subset X \times X$ are open covers covering $X \times X$, then $$ TC(X) \leq TC_X(A_1)+ ....... + TC_X(A_k) $$
+
+
+
+### Lemma 4.2 ###
+
+For a subset $A \subset X \times X$ the following properties are equivalent [^Mi2014]:
+
+${TC}_X (A) = 1$.
+Projections $g: A \to X, \tilde{g}: A \to \tilde{X}$ are homotopic where $\tilde{X} = X,  A\subset X \times \tilde{X}$. (It is true by definition 4.1)
+The inclusion $A \to X \times X$ is homotopic to a map $A \to X \times X$ with values in the diagonal $\Delta_{X} \subset X \times X$.
+
+
 
  
 
