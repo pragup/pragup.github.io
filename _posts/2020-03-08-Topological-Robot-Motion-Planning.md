@@ -38,23 +38,23 @@ $PX = X^I$ is the space of all continuous paths
 $\gamma: I=[0, 1] \to X $
 $PX$ is supplied with compact open topology (compact-open topology is a topology defined on the set of continuous maps between two topological spaces). For any space $Y$ let 
 $p: Y^I \to Y \times Y$ be the map $p(\gamma) = (\gamma(0), \gamma(1))$ for $\gamma: I\to Y$. Then $p$ is fibration. Let $\pi : PX \to X \times X$ is a map where any path 
-$\gamma \in PX$ is mapped to $(\gamma(0), \gamma(1)) \in X\times X$. Then $\pi$ is a fibration. 
+$\gamma \in PX$ is mapped to $(\gamma(0), \gamma(1)) \in X\times X$. Then $\pi$ is a **fibration**. 
 
 
 
 ### Definition 2.1 ###
-The motion planning algorithm [^Mi2014] is a section of a fibration.
+**The motion planning algorithm [^Mi2014]** is a section of a fibration.
 Let $s$ motion planning algorithm i.e a map $s: X \times X \to PX$ where $\pi \circ s  = 1_{X \times X}$.
 Note $ s(A, B) = \gamma \in PX $ where $\gamma $ is a continuous function of $t \in I$ for given points $A, B \in X$.
 And $s$ is continuous, if suggested route($s(A, B)$) depends continuously on states $A$ and $B$.
 Under what condition $s$ is continuous?. We will talk about it before that few definitions.
 
-Let $f, g: X \to Y$ be continuous maps from topological space $X$ to space $Y$. A homotopy between $f$ and $g$ is another continuous map, $H : X \times [0, 1] \to Y$ such that 
-$H(x, 0) = f(x)$ and $H(x, 1) = g(x) \forall x \in X$. This implies $f$ is homotopy equivalent to $g$ i.e $f \simeq g$. Equivalence relation implies reflexive, symmetric, transitive.
-Now we extend definition of homotopy to topological spaces.$Y \subseteq X$ is a retract of $X$ if there is a continuous map $r: X \to Y$ with $r(y) = y ~~\forall y \in Y$, then $r$ 
-is a retraction. An example is shown in Figure 2.a .$Y$ is a deformation retract of $X$ and $r$ is deformation retraction, if there is a homotopy between the retract $r$ and the 
+Let $f, g: X \to Y$ be continuous maps from topological space $X$ to space $Y$. A **homotopy** between $f$ and $g$ is another continuous map, $H : X \times [0, 1] \to Y$ such that 
+$H(x, 0) = f(x)$ and $H(x, 1) = g(x) \forall x \in X$. This implies $f$ is **homotopy equivalent** to $g$ i.e $f \simeq g$. Equivalence relation implies reflexive, symmetric, transitive.
+Now we extend definition of homotopy to topological spaces.$Y \subseteq X$ is a **retract** of $X$ if there is a continuous map $r: X \to Y$ with $r(y) = y ~~\forall y \in Y$, then $r$ 
+is a retraction. An example is shown in Figure 2.a .$Y$ is a **deformation retract** of $X$ and $r$ is deformation retraction, if there is a homotopy between the retract $r$ and the 
 identity map ${id}_{X}$ on $X$ i.e $$r \simeq {id}_{X}$$. Deformation retraction implies homotopy equivalence between topological space $X \simeq Y$. Some examples are shown in 
-Figure 2. $X$ and $Y$ homotopy equivalent or have the same homotopy type, if there exists continuous maps $f: X \to Y$ and $g: Y \to X$ such that $$f \circ g \simeq {id}_{Y}$$ and 
+Figure 2. $X$ and $Y$ **homotopy equivalent** or have the same homotopy type, if there exists continuous maps $f: X \to Y$ and $g: Y \to X$ such that $$f \circ g \simeq {id}_{Y}$$ and 
 $$g \circ f \simeq {id}_{X}$$. Denoted by $X \simeq Y$. Some examples are shown in Figure 3.
 
 |![Figure 2a]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure2a.PNG)| 
@@ -78,14 +78,14 @@ $$g \circ f \simeq {id}_{X}$$. Denoted by $X \simeq Y$. Some examples are shown 
 
 ### Definition 2.2 ###
 
-If $Y$ is a single point and $X \simeq Y$, then $X$ is contractible. Some examples are shown in figure 4.[^Ba2018]
+If $Y$ is a single point and $X \simeq Y$, then $X$ is **contractible**. Some examples are shown in figure 4.[^Ba2018]
 
 |![Figure 4]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure4.PNG)| 
 |:--:| 
 | *Figure 4* |
 
 ### Lemma 2.3 ###
-A continuous motion planning algorithm in $X$ exists if and only if space $X$ is contractible. For a system with a non-contractible configuration space, any motion planning algorithm 
+A **continuous motion planning algorithm** in $X$ exists if and only if space $X$ is contractible. For a system with a non-contractible configuration space, any motion planning algorithm 
 must be discontinuous .[^Mi2014]
 
 
@@ -99,11 +99,11 @@ $ X \times X = F_1 \cup F_2 \cup ..... \cup F_k $ such that
 2. $F_i \cap F_j = \emptyset$, where $i \neq j$
 3. Each $F_i$ is a Euclidean Neighborhood Retract (ENR), defined below. 
 
-Let $A \subset X$. Then A is a neighborhood retract (in $X$), if $A$ has a neighborhood($N_A$) in $X$ and $N_A$ is a retract of $X$. Every retract is also a neighborhood retract 
+Let $A \subset X$. Then A is a **neighborhood retract** (in $X$), if $A$ has a neighborhood($N_A$) in $X$ and $N_A$ is a retract of $X$. Every retract is also a neighborhood retract 
 but every neighborhood retract not necessarily a retract. For example: $X = [0 ,1]$ and $A = \{0\} \cup \{1\}$ then A is a neighborhood retract but not a retract. Since map 
-$r$(retract) is not continuous. If $X = \mathbb{R}^n$, then $A$ is euclidean neighborhood retract [^AD1995].
+$r$(retract) is not continuous. If $X = \mathbb{R}^n$, then $A$ is **euclidean neighborhood retract** [^AD1995].
 
-The topological complexity of the tame motion planning algorithm($s$) is the minimum number of domains($k$) such that $s$ is continuous for each domain. Topological complexity ($TC(X)$)
+**The topological complexity of the tame motion planning algorithm($s$)** is the minimum number of domains($k$) such that $s$ is continuous for each domain. Topological complexity ($TC(X)$)
 of finite-dimensional polyhedron $X$ is minimal topological complexity of tame motion planning algorithms in $X$.[^Mi2014]
 
 **Some of the topological complexity $TC(X)$ examples**:
@@ -116,7 +116,7 @@ Given topological space $X = S^n$, where $n$ is even. Since $n$ is even any vect
 $A_0$ i.e $v(A_0) = 0$. Then $F_1$ remains same as in second and $F_2 = \{(A, -A) \mid A \neq A_0\}$. Consider $F_3 = \{(A_0, -A_0)\}$ and $s_3: F_3 \to PX$ is defined 
 by an arbitrary path from $A_0$ to $-A_0$. And $X \times X = F_1 \cup F_2 \cup F_3$, $TC(X) = 3$. Note: $v$ has one zero since n is even based on **Hairy Ball Theorem**.
 
-Topological complexity is Homotopy invariant.
+Topological complexity is **Homotopy invariant**.
 
 ### Lemma 3.2 ###
 
@@ -184,18 +184,18 @@ $$ <\Delta_p(f), v> = {df}_p(v) $$,
 $$ {df}_p(v) = \sum_{i =1}^{n} v_i\frac{\partial f}{\partial {x_i}}$$
 
 If at a critical point $p$, the matrix of second partial derivatives( Hessian Matrix $H_pf$) is nonsingular, then $p$ is called a non-degenerate critical point; 
-if the Hessian is singular then $p$ is a degenerate critical point. A smooth real-valued function on manifold $M$ is a Morse function if it has no degenerate critical points. 
+if the Hessian is singular then $p$ is a degenerate critical point. A smooth real-valued function on manifold $M$ is a **Morse function** if it has no degenerate critical points. 
 For the functions from $\mathbb{R} \to \mathbb{R}$, f has a critical point at the origin if $b = 0$, which is non-degenerate if $c \neq 0$ (i.e $f$ is of the form $a + cx^2+ ...$) 
 and degenerate if $c = 0$ (i.e $f$ is of the form $a + dx^3+ ....$)[^Wi2019].
 
 Let critical points set is $S$ of smooth function $f: M \to \mathbb{R}$ and $S_i$ is non-degenerate connected submanifold in $S$. Let $p \in S_i$, then $T_p(M) = T_p(S_i) + N_p(S_i)$, where $T_p(M)$ is tangential space of $M$ and $N_p(S_i)$ is normal bundle of $S_i$.
 
-Then $f$ is a Morse-Bott function, if $H_pf(v) \neq 0$ where $\forall v \in N_p(S_i)$ i.e Hessian is non-degenerate in the normal direction (Equivalently, the kernel of the Hessian at a critical point equals the tangent space to the critical submanifold i.e $T_p(S_i) = Ker(H_pf)$). 
+Then $f$ is a **Morse-Bott function**, if $H_pf(v) \neq 0$ where $\forall v \in N_p(S_i)$ i.e Hessian is non-degenerate in the normal direction (Equivalently, the kernel of the Hessian at a critical point equals the tangent space to the critical submanifold i.e $T_p(S_i) = Ker(H_pf)$). 
 A Morse function is a special case which has no kernel [^Wi2019].
 
 ### Definition 5.1 ###
 
-Navigation Function [^Mi2014]:  A smooth function $F: M \times M \to \mathbb{R}$ is called a navigation function for $M$ if
+**Navigation Function [^Mi2014]**:  A smooth function $F: M \times M \to \mathbb{R}$ is called a navigation function for $M$ if
 
 1. $F(x, y) \geq 0$ for all $x, y \in M$
 2. $F(x, y) = 0$ if and only if $x = y$
