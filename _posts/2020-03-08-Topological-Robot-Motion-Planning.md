@@ -151,6 +151,16 @@ Consider a topological space $Y$ homeomorphic to sphere($S^2$). That implies $Y$
 
 
 ## Relative Topological Complexity ($$TC_X(A)$$) ##
+
+### Definition 4.1 ###
+Let $X$ be a topological space  and $A \subset X \times X$ be subspace. Then the number ${TC}_{X}(A)$ is defined as the fibration $\pi: P_{A}X \to A$ where 
+${P_A}X \subset PX$ is the space of all paths $\gamma : [0, 1] \to X$ such that the pair if end points $(\gamma(0), \gamma(1))$ lies in $A$. In other words 
+${TC}_X(A)$ is the smallest integer $k$ such that there is an open cover $A = U_1 \cup ............ \cup U_k$ where $U_i \subset A$ is open and projections 
+$g: U_i \to X, \tilde{g}: U_i \to \tilde{X}$ are homotopic where $\tilde{X} = X,  A\subset X \times \tilde{X}$.[3] 
+
+We can clearly see that $TC(X) = {TC}_{X}(X \times X)$
+
+If $A_1, .... , A_k \subset X \times X$ are open covers covering $X \times X$, then $$ TC(X) \leq TC_X(A_1)+ ....... + TC_X(A_k) $$
  
 
 ## References ##
