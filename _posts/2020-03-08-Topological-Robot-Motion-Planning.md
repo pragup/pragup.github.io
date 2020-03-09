@@ -217,10 +217,8 @@ Let $F: M \times M \to \mathbb{R}$ be a navigation function for $M$. Consider th
 of the set of critical points of $F$ and denote by $c_i \in \mathbb{R}$ the corresponding critical values, i.e, $F(S_i) = \{c_i\}$ [^Mi2014]. Then one has 
 
 $$TC(M) \leq \sum_{r \in Crit(F)} N_r$$
-
 Here $Crit(F) \subset \mathbb{R}$ denotes the set of critical values of $F$ and for $r \in Crit(F)$ the symbol $N_r$ denotes the maximum of the 
-numbers ${TC}_M(S_i)$ where $i$ runs over indices satisfying $c_i = r$ i.e 
-$$N_r = \max_{c_i =r} {TC}_M(S_i)$$
+numbers ${TC}_M(S_i)$ where $i$ runs over indices satisfying $c_i = r$ i.e  $$N_r = \max_{c_i =r} {TC}_M(S_i)$$
 Imagine, image of $F$ for some $S_i$ is the height $r$. $N_r$ is maximum relative topological complexity of all possible $S_i$ at a given height $r$.
 Topological complexity $M$ is less than or equal to the sum of $N_r$'s at all possible heights.  
 
@@ -228,7 +226,7 @@ Topological complexity $M$ is less than or equal to the sum of $N_r$'s at all po
 is given by $$F(x, y) = \sum_{i=1}^{k}(x_i - y_i)^2$$
 $$dF_p(v) = \sum_{i =1}^{k} 2(x^*_i - y^*_i) {v}^i_{x^*} - \sum_{i =1}^{k} 2(x^*_i - y^*_i) {v}^i_{y^*} = \sum_{i =1}^{k} 2(x^*_i - y^*_i) ({v}^i_{x^*} - {v}^i_{y^*}) ~~ (1)$$        
 Then, for $$dF_p(v) = 0$$ i.e $$p=(x^*, y^*)$$ is a critical point. It is true if and only if euclidean segment $$(x^*, y^*) \subset R^n $$ are perpendicular to 
-tangent space to $M$ at point $x^*$(i.e $$T_{x^*}(M)$$) and $y^*$(i.e $$T_{y^*}(M)$$). It is clear from $$dF_p(v)$$ equation 1.
+tangent space to $M$ at point $$ x^* $$(i.e $$ T_{x^*}(M)$$) and $$y^*$$ (i.e $$ T_{y^*}(M)$$). It is clear from $$dF_p(v)$$ equation 1.
 $x = (x_1, ....... , x_n) \in M, y = (y_1, ......... , y_n) \in M$ and $(x_i, y_i) \in M_i$, where $M_i$ is the $i^{th}$  $S^1$ in configuration space of $M$.
 Let $J \subseteq \{1, .....,n\}$ and $S_J$ is critical submanifold of $M$, where $x_i = -y_i \forall i \in J$ and $x_i = y_i \forall i \notin J$ by equation 1.
 Let $J = \{1, 2\}$, then $F(S_J) = 4x^2_1+ 4x^2_2 = 4 \times 2 = 8$, since $x_1, x_2$ lies on a unit circle $S^1$ implies $x^2_1 = 1$ and $x^2_2 = 1$. 
