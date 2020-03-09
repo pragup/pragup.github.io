@@ -121,7 +121,6 @@ Topological complexity is **Homotopy invariant**.
 
 Let $X$ and $Y$ be topological spaces. Suppose that $X$ dominates $Y$  i.e there exist continuous maps $f: X \to Y$ and $g: Y \to X$ such that $f \circ g \sim {id}_Y$. 
 Then $TC(Y) \leq TC(X)$.[^Mi2017]
-
 An example is shown in figure 5.
 
 |![Figure 5a]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate1.PNG)| 
