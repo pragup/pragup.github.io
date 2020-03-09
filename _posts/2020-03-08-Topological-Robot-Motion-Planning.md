@@ -190,6 +190,29 @@ Let critical points set is $S$ of smooth function $f: M \to \mathbb{R}$ and $S_i
 Then $f$ is a Morse-Bott function, if $H_pf(v) \neq 0$ where $\forall v \in N_p(S_i)$ i.e Hessian is non-degenerate in the normal direction (Equivalently, the kernel of the Hessian at a critical point equals the tangent space to the critical submanifold i.e $T_p(S_i) = Ker(H_pf)$). 
 A Morse function is a special case which has no kernel [^Wi2019].
 
+### Definition 5.1 ###
+
+Navigation Function [^Mi2014]:  A smooth function $F: M \times M \to \mathbb{R}$ is called a navigation function for $M$ if
+
+1. $F(x, y) \geq 0$ for all $x, y \in M$
+2. $F(x, y) = 0$ if and only if $x = y$
+3. $F$ is nondegenerate in the sense of Morse-Bott function. 
+
+
+Set of critical points of $F$ belongs to a set  of connected components $\{S_i\}$, where $S_i$ is submanifold and 
+$ S_i \subset M \times M$. We are also assuming that that $S_1 = \Delta_{M}$, where $\Delta_{M} = \{(x, x); x \in M \}$. 
+
+Gradient vector Field ($\Delta_p F$) of $F$ at point $p$ is 
+
+$$\Delta_p F = \sum_{i =1}^{k} \frac{\partial F}{\partial x_i} e_i + \sum_{i =1}^{k} \frac{\partial F}{\partial y_i} e_{i + k}$$
+
+where $p=(x^*_1, ...... , x^*_k, y^*_1, ......, y^*_k)= (x^*, y^*)$, $v_{x^*} \in T_{x^*}(M), v_{y^*} \in T_{y^*}(M)$ and $(v_{x^*}, v_{y^*}) \in T_p(M \times M)$
+
+$$\sum_{i =1}^{k} \frac{\partial F}{\partial x_i} {v}^i_{x^*} + \sum_{i =1}^{k} \frac{\partial F}{\partial y_i} {v}^i_{y^*} = dF_p(v)$$
+
+where $v=({v}_{x^*}, {v}_{y^*})$
+
+
 ## References ##
 
 [^Ra2018]: Ralph L. Cohen, , 2018. Algebraic topological aspects of morse theory. [http://virtualmath1.stanford.edu/~ralph/morsecourse/biglectures.pdf](http://virtualmath1.stanford.edu/~ralph/morsecourse/biglectures.pdf)
