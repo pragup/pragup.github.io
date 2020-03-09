@@ -125,13 +125,13 @@ Then $TC(Y) \leq TC(X)$.[^Mi2017]
 
 An example is shown in figure 5.
 
-|![Figure 5a]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate1.PNG) | 
+|![Figure 5a]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate1.PNG ) | 
 |:--:| 
 | *Figure 5.a* |
-|![Figure 5b]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate2.PNG) | 
+|![Figure 5b]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate2.PNG ) | 
 |:--:| 
 | *Figure 5.b* |
-|![Figure 5b]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate3.PNG) | 
+|![Figure 5c]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate3.PNG ) | 
 |:--:| 
 | *Figure 5.c* |
 | Figure 5: $X$(unit circle) and $Y$(straight line) are topological space in blue and red. $f$ is a continuous map that projects every point of $X$ vertically on $Y$ as shown by 
@@ -148,7 +148,7 @@ If $ Y \subset X$ is a retract and $X$ can be deformed into $Y$. Then $TC(Y) = T
 then $TC(X) = TC(Y)$.[Mi2014]
 Consider a topological space $Y$ homeomorphic to sphere($S^2$). That implies $Y$ is homotopy equivalent to $S^2$. Hence $TC(S^2) = TC(Y)$.
 
-## Relative Topological Complexity ($TC_X(A)$)##
+## Relative Topological Complexity ($$TC_X(A)$$) ##
 
 ### Definition 4.1 ###
 Let $X$ be a topological space  and $A \subset X \times X$ be subspace. Then the number ${TC}_{X}(A)$ is defined as the fibration $\pi: P_{A}X \to A$ where 
