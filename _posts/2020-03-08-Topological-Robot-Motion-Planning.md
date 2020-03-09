@@ -69,8 +69,7 @@ $$g \circ f \simeq {id}_{X}$$. Denoted by $X \simeq Y$. Some examples are shown 
 |![Figure 2d]( https://pragup.github.io/images/topologyrobotmotionplanning_Figure2d.PNG)| 
 |:--:| 
 | *Figure 2.d* |
-| *Figure 2 : $Y$ is not a deformation retraction of $X$ but just a retraction, whereas $Y_i$ $\forall i \in {1, 2, 3, 4}$  is deformation retraction of $X$. 
-Hence $$X \simeq Y_i ~~\forall i$$ [^Ba2018]*|
+| Figure 2 : $Y$ is not a deformation retraction of $X$ but just a retraction, whereas $Y_i$ $\forall i \in {1, 2, 3, 4}$  is deformation retraction of $X$. Hence $$X \simeq Y_i ~~\forall i$$  [^Ba2018]|
 
 
 
