@@ -106,7 +106,7 @@ $r$(retract) is not continuous. If $X = \mathbb{R}^n$, then $A$ is euclidean nei
 The topological complexity of the tame motion planning algorithm($s$) is the minimum number of domains($k$) such that $s$ is continuous for each domain. Topological complexity ($TC(X)$)
 of finite-dimensional polyhedron $X$ is minimal topological complexity of tame motion planning algorithms in $X$.[^Mi2014]
 
-__**Some of the topological complexity $TC(X)$ examples**__:
+**Some of the topological complexity $TC(X)$ examples**:
 
 If X is contractible then by lemma 2.3 there exists a continuous tame motion planning algorithm. Hence $TC(X) = 1$
 Given topological space $X = S^n$, where $n$ is odd. Consider $F_1 = \{(A, B)\mid A \neq -B\}$. Then $s_1: F_1 \to PX$ where $s_1(A, B)$ is a shortest geodesic arc along the
@@ -114,7 +114,7 @@ surface of $S^n$. Consider $F_2 = \{(A, -A)\}$ i.e pair of all antipodal points.
 $s_2(A, -A)$ move along the semi circle tangent to vector $v(A)$ from $A$ to $-A$ . And $X \times X = F_1 \cup F_2$, $TC(X) = 2$. Note: $v$ is non vanishing since n is odd.  
 Given topological space $X = S^n$, where $n$ is even. Since $n$ is even any vector field $v$ has at least one zero. We may construct a vector field $v$ with one zero at 
 $A_0$ i.e $v(A_0) = 0$. Then $F_1$ remains same as in second and $F_2 = \{(A, -A) \mid A \neq A_0\}$. Consider $F_3 = \{(A_0, -A_0)\}$ and $s_3: F_3 \to PX$ is defined 
-by an arbitrary path from $A_0$ to $-A_0$. And $X \times X = F_1 \cup F_2 \cup F_3$, $TC(X) = 3$. Note: $v$ has one zero since n is even based on __**Hairy Ball Theorem**__. 
+by an arbitrary path from $A_0$ to $-A_0$. And $X \times X = F_1 \cup F_2 \cup F_3$, $TC(X) = 3$. Note: $v$ has one zero since n is even based on **Hairy Ball Theorem**. 
 
 ## References ##
 
