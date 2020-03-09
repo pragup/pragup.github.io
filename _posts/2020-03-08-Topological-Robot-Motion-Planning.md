@@ -125,13 +125,13 @@ Then $TC(Y) \leq TC(X)$.[^Mi2017]
 
 An example is shown in figure 5.
 
-|![Figure 5a]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate1.PNG)| 
+|![Figure 5a]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate1.PNG) | 
 |:--:| 
 | *Figure 5.a* |
-|![Figure 5b]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate2.PNG)| 
+|![Figure 5b]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate2.PNG) | 
 |:--:| 
 | *Figure 5.b* |
-|![Figure 5b]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate3.PNG)| 
+|![Figure 5b]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate3.PNG) | 
 |:--:| 
 | *Figure 5.c* |
 | Figure 5: $X$(unit circle) and $Y$(straight line) are topological space in blue and red. $f$ is a continuous map that projects every point of $X$ vertically on $Y$ as shown by 
