@@ -160,8 +160,6 @@ We can clearly see that $TC(X) = {TC}_{X}(X \times X)$
 
 If $A_1, .... , A_k \subset X \times X$ are open covers covering $X \times X$, then $$ TC(X) \leq TC_X(A_1)+ ....... + TC_X(A_k) $$
 
-
-
 ### Lemma 4.2 ###
 
 For a subset $A \subset X \times X$ the following properties are equivalent [^Mi2014]:
