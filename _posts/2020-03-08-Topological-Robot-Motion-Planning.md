@@ -35,16 +35,16 @@ continuous motion of the mechanical system which starts at $A$ and ends at $B$. 
 in $X$. Continuous motion of the system from state $A$ to $B$ is represented by continuous path $\gamma: [0, 1] \to X$, where $\gamma(0)= A$ and $\gamma(1)= B$. The system is 
 path-connected if there exists a $\gamma$ for any arbitrary $A$ and $B$.     
 $PX = X^I$ is the space of all continuous paths 
-$$\[\gamma: I=[0, 1] \to X \]$$
+$\[\gamma: I=[0, 1] \to X \]$
 $PX$ is supplied with compact open topology (compact-open topology is a topology defined on the set of continuous maps between two topological spaces). For any space $Y$ let 
-$p: Y^I \to Y \times Y$ be the map $p(\gamma) = (\gamma(0), \gamma(1))$ for $\gamma: I\to Y$. Then $p$ is fibration. Let $$\[\pi : PX \to X \times X\]$$ is a map where any path 
+$p: Y^I \to Y \times Y$ be the map $p(\gamma) = (\gamma(0), \gamma(1))$ for $\gamma: I\to Y$. Then $p$ is fibration. Let $\[\pi : PX \to X \times X\]$ is a map where any path 
 $\gamma \in PX$ is mapped to $(\gamma(0), \gamma(1)) \in X\times X$. Then $\pi$ is a fibration. 
 
 
 
 ### Definition 2.1 ###
 The motion planning algorithm [^Mi2014] is a section of a fibration.
-Let $s$ motion planning algorithm i.e a map $$\[s: X \times X \to PX\]$$ where $$\[\pi \circ s  = 1_{X \times X}\]$$
+Let $s$ motion planning algorithm i.e a map $\[s: X \times X \to PX\]$ where $\[\pi \circ s  = 1_{X \times X}\]$
 Note $ s(A, B) = \gamma \in PX $ where $\gamma $ is a continuous function of $t \in I$ for given points $A, B \in X$.
 And $s$ is continuous, if suggested route($s(A, B)$) depends continuously on states $A$ and $B$.
 Under what condition $s$ is continuous?. We will talk about it before that few definitions.
@@ -94,7 +94,7 @@ Polyhedral is a subset $X \subset \mathbb{R}^n$, homeomorphic to underline space
 
 ### Definition 3.1 ###
 Let $X$ be a polyhedron. A motion planning algorithm $s: X \times X \to PX$ is called tame if $X \times X$ can be split into finitely many sets [^Mi2014]
-$$\[X \times X = F_1 \cup F_2 \cup ..... \cup F_k\]$$ such that
+$\[X \times X = F_1 \cup F_2 \cup ..... \cup F_k\]$ such that
 1. The restriction $$s|F_i : F_i \to PX$$ is continuous, $i \in \{1, ..... , k\}$
 2. $F_i \cap F_j = \emptyset$, where $i \neq j$
 3. Each $F_i$ is a Euclidean Neighborhood Retract (ENR), defined below. 
@@ -106,7 +106,7 @@ $r$(retract) is not continuous. If $X = \mathbb{R}^n$, then $A$ is euclidean nei
 The topological complexity of the tame motion planning algorithm($s$) is the minimum number of domains($k$) such that $s$ is continuous for each domain. Topological complexity ($TC(X)$)
 of finite-dimensional polyhedron $X$ is minimal topological complexity of tame motion planning algorithms in $X$.[^Mi2014]
 
-Some of the topological complexity $TC(X)$ examples:
+__**Some of the topological complexity $TC(X)$ examples**__:
 
 If X is contractible then by lemma 2.3 there exists a continuous tame motion planning algorithm. Hence $TC(X) = 1$
 Given topological space $X = S^n$, where $n$ is odd. Consider $F_1 = \{(A, B)\mid A \neq -B\}$. Then $s_1: F_1 \to PX$ where $s_1(A, B)$ is a shortest geodesic arc along the
@@ -114,7 +114,7 @@ surface of $S^n$. Consider $F_2 = \{(A, -A)\}$ i.e pair of all antipodal points.
 $s_2(A, -A)$ move along the semi circle tangent to vector $v(A)$ from $A$ to $-A$ . And $X \times X = F_1 \cup F_2$, $TC(X) = 2$. Note: $v$ is non vanishing since n is odd.  
 Given topological space $X = S^n$, where $n$ is even. Since $n$ is even any vector field $v$ has at least one zero. We may construct a vector field $v$ with one zero at 
 $A_0$ i.e $v(A_0) = 0$. Then $F_1$ remains same as in second and $F_2 = \{(A, -A) \mid A \neq A_0\}$. Consider $F_3 = \{(A_0, -A_0)\}$ and $s_3: F_3 \to PX$ is defined 
-by an arbitrary path from $A_0$ to $-A_0$. And $X \times X = F_1 \cup F_2 \cup F_3$, $TC(X) = 3$. Note: $v$ has one zero since n is even based on Hairy Ball Theorem. 
+by an arbitrary path from $A_0$ to $-A_0$. And $X \times X = F_1 \cup F_2 \cup F_3$, $TC(X) = 3$. Note: $v$ has one zero since n is even based on __**Hairy Ball Theorem**__. 
 
 ## References ##
 
