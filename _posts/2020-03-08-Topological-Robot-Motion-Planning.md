@@ -206,11 +206,11 @@ Gradient vector Field ($\Delta_p F$) of $F$ at point $p$ is
 
 $$\Delta_p F = \sum_{i =1}^{k} \frac{\partial F}{\partial x_i} e_i + \sum_{i =1}^{k} \frac{\partial F}{\partial y_i} e_{i + k}$$
 
-where $p=(x^*_1, ...... , x^*_k, y^*_1, ......, y^*_k)= (x^*, y^*)$, $v_{x^*} \in T_{x^*}(M), v_{y^*} \in T_{y^*}(M)$ and $(v_{x^*}, v_{y^*}) \in T_p(M \times M)$
+where $$p=(x^*_1, ...... , x^*_k, y^*_1, ......, y^*_k)= (x^*, y^*)$, $v_{x^*} \in T_{x^*}(M), v_{y^*} \in T_{y^*}(M)$$ and $$(v_{x^*}, v_{y^*}) \in T_p(M \times M)$$
 
 $$\sum_{i =1}^{k} \frac{\partial F}{\partial x_i} {v}^i_{x^*} + \sum_{i =1}^{k} \frac{\partial F}{\partial y_i} {v}^i_{y^*} = dF_p(v)$$
 
-where $v=({v}_{x^*}, {v}_{y^*})$
+where $$v=({v}_{x^*}, {v}_{y^*})$$
 
 
 ## References ##
