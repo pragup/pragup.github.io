@@ -164,9 +164,32 @@ If $A_1, .... , A_k \subset X \times X$ are open covers covering $X \times X$, t
 
 For a subset $A \subset X \times X$ the following properties are equivalent [^Mi2014]:
 
-${TC}_X (A) = 1$.
-Projections $g: A \to X, \tilde{g}: A \to \tilde{X}$ are homotopic where $\tilde{X} = X,  A\subset X \times \tilde{X}$. (It is true by definition 4.1)
-The inclusion $A \to X \times X$ is homotopic to a map $A \to X \times X$ with values in the diagonal $\Delta_{X} \subset X \times X$.
+1. ${TC}_X (A) = 1$.
+2. Projections $g: A \to X, \tilde{g}: A \to \tilde{X}$ are homotopic where $\tilde{X} = X,  A\subset X \times \tilde{X}$. (It is true by definition 4.1)
+3. The inclusion $A \to X \times X$ is homotopic to a map $A \to X \times X$ with values in the diagonal $\Delta_{X} \subset X \times X$.
+
+## Navigation Function ##
+Before we start talking about navigation functions we will define few things from differential geometry. 
+For a real valued smooth function $f: M \to \mathbb{R}$ on a differentiable manifold $M$, the points where the differential of $f$ (${df}_p : T_p(M) \to \mathbb{R}$)
+vanishes are called critical points of $f$ and their images under $f$ are called critical values. 
+$\Delta_p(f) $ is the gradient vector field determined by $f$. Given the Riemannian metric $<. , .>$, ${df}_p(v)$ is determined by the property that
+
+$$ <\Delta_p(f), v> = {df}_p(v) $$,
+
+$$ {df}_p(v) = \sum_{i =1}^{n} v_i\frac{\partial f}{\partial {x_i}}$$
+
+If at a critical point $p$, the matrix of second partial derivatives( Hessian Matrix $H_pf$) is nonsingular, then $p$ is called a non-degenerate critical point; 
+if the Hessian is singular then $p$ is a degenerate critical point. A smooth real-valued function on manifold $M$ is a Morse function if it has no degenerate critical points. 
+For the functions from $\mathbb{R} \to \mathbb{R}$, f has a critical point at the origin if $b = 0$, which is non-degenerate if $c \neq 0$ (i.e $f$ is of the form $a + cx^2+ ...$) 
+and degenerate if $c = 0$ (i.e $f$ is of the form $a + dx^3+ ....$)[^Wi2019].
+
+Let critical points set is $S$ of smooth function $f: M \to \mathbb{R}$ and $S_i$ is non-degenerate connected submanifold in $S$. Let $p \in S_i$, then $T_p(M) = T_p(S_i) + N_p(S_i)$, where $T_p(M)$ is tangential space of $M$ and $N_p(S_i)$ is normal bundle of $S_i$.
+
+Then $f$ is a Morse-Bott function, if $H_pf(v) \neq 0$ where $\forall v \in N_p(S_i)$ i.e Hessian is non-degenerate in the normal direction (Equivalently, the kernel of the Hessian at a critical point equals the tangent space to the critical submanifold i.e $T_p(S_i) = Ker(H_pf)$). 
+A Morse function is a special case which has no kernel [^Wi2019].
+
+
+
 
 
 
