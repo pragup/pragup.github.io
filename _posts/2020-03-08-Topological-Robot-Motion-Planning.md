@@ -126,14 +126,23 @@ Then $TC(Y) \leq TC(X)$.[^Mi2017]
 An example is shown in figure 5.
 
 |![Figure 5a]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate1.PNG ) | 
+
 |:--:| 
+
 | *Figure 5.a* |
+
 |![Figure 5b]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate2.PNG ) | 
+
 |:--:| 
+
 | *Figure 5.b* |
+
 |![Figure 5c]( https://pragup.github.io/images/topologyrobotmotionplanning_dominate3.PNG ) | 
+
 |:--:| 
+
 | *Figure 5.c* |
+
 | Figure 5: $X$(unit circle) and $Y$(straight line) are topological space in blue and red. $f$ is a continuous map that projects every point of $X$ vertically on $Y$ as shown by 
 green edges in middle figure. $g$ is continuous map that projects every points of $Y$ vertically onto upper semi circle $X$ as shown by green edges in right most figure. Then 
 $f \circ g \sim {id}_Y$ i.e $X$ dominates $Y$ and $TC(X) =2$, $TC(Y) = 1$.|
@@ -215,10 +224,8 @@ where $$v=({v}_{x^*}, {v}_{y^*})$$
 ### Lemma 5.2 ###
 Let $F: M \times M \to \mathbb{R}$ be a navigation function for $M$. Consider the connected components $S_1, S_2, ....., S_k \subset M \times M$
 of the set of critical points of $F$ and denote by $c_i \in \mathbb{R}$ the corresponding critical values, i.e, $F(S_i) = \{c_i\}$ [^Mi2014]. Then one has 
-
-$$TC(M) \leq \sum_{r \in Crit(F)} N_r$$
-Here $Crit(F) \subset \mathbb{R}$ denotes the set of critical values of $F$ and for $r \in Crit(F)$ the symbol $N_r$ denotes the maximum of the 
-numbers ${TC}_M(S_i)$ where $i$ runs over indices satisfying $c_i = r$ i.e  $$N_r = \max_{c_i =r} {TC}_M(S_i)$$
+$$TC(M) \leq \sum_{r \in Crit(F)} N_r$$.Here $Crit(F) \subset \mathbb{R}$ denotes the set of critical values of $F$ and for $r \in Crit(F)$ the symbol $N_r$ 
+denotes the maximum of the numbers ${TC}_M(S_i)$ where $i$ runs over indices satisfying $c_i = r$ i.e  $$N_r = \max_{c_i =r} {TC}_M(S_i)$$
 Imagine, image of $F$ for some $S_i$ is the height $r$. $N_r$ is maximum relative topological complexity of all possible $S_i$ at a given height $r$.
 Topological complexity $M$ is less than or equal to the sum of $N_r$'s at all possible heights.  
 
