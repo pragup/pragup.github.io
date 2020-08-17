@@ -22,7 +22,7 @@ EXPERIENCE
 * Developed novel mathematical theory and scalable algorithms to generate continuous tool path with no crossover for any arbitrary partial fill problem in AM. Developed a unique framework to integrate it with AM. (Manuscript in preparation)
     
 * **Oak Ridge National Laboratory (ORNL)**  
-* Research Collaboration, *May 2019 – present*
+* Research Collaboration, *May 2019 – Dec 2020*
 * Developing multi-robot additive manufacturing framework to reduce print time and failures, jointly with researchers from MIT and ORNL.
  
 * **Oak Ridge National Laboratory (ORNL)**   
