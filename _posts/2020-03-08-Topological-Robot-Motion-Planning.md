@@ -1,5 +1,5 @@
 ---
-title: 'Topological Robot Motion Planning'
+title: 'Topological Complexity of Robot Motion Planning'
 date: 2020-03-08
 permalink: /posts/2020/03/Topological-Robot-Motion-Planning/
 tags:
