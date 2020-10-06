@@ -11,7 +11,7 @@ redirect_from:
 
 CV Download
 ======
-[Download]: https://pragup.github.io/files/Prashant_CV.pdf
+*[Download](https://pragup.github.io/files/Prashant_CV.pdf)
 
 EDUCATION
 ======
