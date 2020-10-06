@@ -9,6 +9,10 @@ redirect_from:
 
 {% include base_path %}
 
+CV Download
+======
+* Link : https://pragup.github.io/files/Prashant_CV.pdf
+
 EDUCATION
 ======
 * M.S. in Simulation Based Mechanical Engineering Science, University of Colorado, Boulder, 2014
