@@ -7,9 +7,9 @@ venue: "University of Strasbourg"
 date: 2020-06-04
 location: "Strasbourg, France"
 ---
-
+## ##
 Our work was accepted in Symposium Of Solid And Physical Modeling 2020. This talk was given in the symposium.
-
+## ##
 [Talk](https://pragup.github.io/files/spmPPTDiscord.pdf)
-
+## ##
 [Example Tool Path](https://www.youtube.com/watch?v=u3Vb0QDZy7Y)
