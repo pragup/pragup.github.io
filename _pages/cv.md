@@ -9,6 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-[CV Download](https://pragup.github.io/files/Prashant_CV.pdf)
+[CV](https://pragup.github.io/files/Prashant_CV.pdf)
 
-[Resume Download](https://pragup.github.io/files/Prashant_Resume.pdf)  
+[Resume](https://pragup.github.io/files/Prashant_Resume.pdf)  
