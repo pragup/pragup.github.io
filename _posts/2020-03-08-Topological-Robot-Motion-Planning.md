@@ -107,7 +107,7 @@ of finite-dimensional polyhedron $X$ is minimal topological complexity of tame m
 
 **Some of the topological complexity $TC(X)$ examples**:
 
-If X is contractible then by lemma 2.3 there exists a continuous tame motion planning algorithm. Hence $TC(X) = 1$
+If X is contractible then by lemma 2.3 there exists a continuous tame motion planning algorithm. Hence $TC(X) = 1$.
 Given topological space $X = S^n$, where $n$ is odd. Consider $F_1 = \\{(A, B)\mid A \neq -B\\}$. Then $s_1: F_1 \to PX$ where $s_1(A, B)$ is a shortest geodesic arc along the
 surface of $S^n$. Consider $F_2 = \\{(A, -A)\\}$ i.e pair of all antipodal points. We will find $s_2: F_2 \to PX$. Construct non vanishing vector field $v$ on $S^n$. Then 
 $s_2(A, -A)$ move along the semi circle tangent to vector $v(A)$ from $A$ to $-A$ . And $X \times X = F_1 \cup F_2$, $TC(X) = 2$. Note: $v$ is non vanishing since n is odd.  
@@ -147,7 +147,7 @@ $X \times X = F_1 \cup F_2$ since $X$ has antipodal points. But $Y$ has no antip
 
 ### Corollary 3.4 ###
 If $ Y \subset X$ is a retract and $X$ can be deformed into $Y$. Then $TC(Y) = TC(X)$. It is also true, if topological space $X$ and $Y$ are homotopy equivalent 
-then $TC(X) = TC(Y)$.[Mi2014]
+then $TC(X) = TC(Y)$[Mi2014].
 Consider a topological space $Y$ homeomorphic to sphere($S^2$). That implies $Y$ is homotopy equivalent to $S^2$. Hence $TC(S^2) = TC(Y)$.
 
 
