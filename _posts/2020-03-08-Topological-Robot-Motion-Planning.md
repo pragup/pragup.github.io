@@ -94,12 +94,12 @@ Polyhedral is a subset $X \subset \mathbb{R}^n$, homeomorphic to underline space
 ### Definition 3.1 ###
 Let $X$ be a polyhedron. A motion planning algorithm $s: X \times X \to PX$ is called tame if $X \times X$ can be split into finitely many sets [^Mi2014]
 $ X \times X = F_1 \cup F_2 \cup ..... \cup F_k $ such that
-1. The restriction $$s \mid F_i : F_i \to PX$$ is continuous, $i \in {1, ..... , k}$
+1. The restriction $$s \mid F_i : F_i \to PX$$ is continuous, $i \in \\{1, ..... , k\\}$
 2. $F_i \cap F_j = \emptyset$, where $i \neq j$
 3. Each $F_i$ is a Euclidean Neighborhood Retract (ENR), defined below. 
 
 Let $A \subset X$. Then A is a **neighborhood retract** (in $X$), if $A$ has a neighborhood($N_A$) in $X$ and $N_A$ is a retract of $X$. Every retract is also a neighborhood retract 
-but every neighborhood retract not necessarily a retract. For example: $X = [0 ,1]$ and $A = \{0\} \cup \{1\}$ then A is a neighborhood retract but not a retract. Since map 
+but every neighborhood retract not necessarily a retract. For example: $X = [0 ,1]$ and $A = \\{0\\} \cup \\{1\\}$ then A is a neighborhood retract but not a retract. Since map 
 $r$(retract) is not continuous. If $X = \mathbb{R}^n$, then $A$ is **euclidean neighborhood retract** [^AD1995].
 
 **The topological complexity of the tame motion planning algorithm($s$)** is the minimum number of domains($k$) such that $s$ is continuous for each domain. Topological complexity ($TC(X)$)
@@ -108,11 +108,11 @@ of finite-dimensional polyhedron $X$ is minimal topological complexity of tame m
 **Some of the topological complexity $TC(X)$ examples**:
 
 If X is contractible then by lemma 2.3 there exists a continuous tame motion planning algorithm. Hence $TC(X) = 1$
-Given topological space $X = S^n$, where $n$ is odd. Consider $F_1 = \{(A, B)\mid A \neq -B\}$. Then $s_1: F_1 \to PX$ where $s_1(A, B)$ is a shortest geodesic arc along the
-surface of $S^n$. Consider $F_2 = \{(A, -A)\}$ i.e pair of all antipodal points. We will find $s_2: F_2 \to PX$. Construct non vanishing vector field $v$ on $S^n$. Then 
+Given topological space $X = S^n$, where $n$ is odd. Consider $F_1 = \\{(A, B)\mid A \neq -B\\}$. Then $s_1: F_1 \to PX$ where $s_1(A, B)$ is a shortest geodesic arc along the
+surface of $S^n$. Consider $F_2 = \\{(A, -A)\\}$ i.e pair of all antipodal points. We will find $s_2: F_2 \to PX$. Construct non vanishing vector field $v$ on $S^n$. Then 
 $s_2(A, -A)$ move along the semi circle tangent to vector $v(A)$ from $A$ to $-A$ . And $X \times X = F_1 \cup F_2$, $TC(X) = 2$. Note: $v$ is non vanishing since n is odd.  
 Given topological space $X = S^n$, where $n$ is even. Since $n$ is even any vector field $v$ has at least one zero. We may construct a vector field $v$ with one zero at 
-$A_0$ i.e $v(A_0) = 0$. Then $F_1$ remains same as in second and $F_2 = \{(A, -A) \mid A \neq A_0\}$. Consider $F_3 = \{(A_0, -A_0)\}$ and $s_3: F_3 \to PX$ is defined 
+$A_0$ i.e $v(A_0) = 0$. Then $F_1$ remains same as in second and $F_2 = \\{(A, -A) \mid A \neq A_0\\}$. Consider $F_3 = \\{(A_0, -A_0)\\}$ and $s_3: F_3 \to PX$ is defined 
 by an arbitrary path from $A_0$ to $-A_0$. And $X \times X = F_1 \cup F_2 \cup F_3$, $TC(X) = 3$. Note: $v$ has one zero since n is even based on **Hairy Ball Theorem**.
 
 Topological complexity is **Homotopy invariant**.
