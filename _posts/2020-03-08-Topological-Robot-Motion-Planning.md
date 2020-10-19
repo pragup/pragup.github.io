@@ -94,7 +94,7 @@ Polyhedral is a subset $X \subset \mathbb{R}^n$, homeomorphic to underline space
 ### Definition 3.1 ###
 Let $X$ be a polyhedron. A motion planning algorithm $s: X \times X \to PX$ is called tame if $X \times X$ can be split into finitely many sets [^Mi2014]
 $ X \times X = F_1 \cup F_2 \cup ..... \cup F_k $ such that
-1. The restriction $$s \mid F_i : F_i \to PX$$ is continuous, $i \in \{1, ..... , k\}$
+1. The restriction $$s \mid F_i : F_i \to PX$$ is continuous, $i \in {1, ..... , k}$
 2. $F_i \cap F_j = \emptyset$, where $i \neq j$
 3. Each $F_i$ is a Euclidean Neighborhood Retract (ENR), defined below. 
 
