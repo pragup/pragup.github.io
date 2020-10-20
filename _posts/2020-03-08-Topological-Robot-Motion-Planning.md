@@ -187,12 +187,7 @@ For the functions from $\mathbb{R} \to \mathbb{R}$, f has a critical point at th
 and degenerate if $c = 0$ (i.e $f$ is of the form $a + dx^3+ ....$)[^Wi2019]. Morse functions necessarily have isolated critical points.
 
 Let critical points set is $S$ of smooth function $f: M \to \mathbb{R}$. If each point in $S$ belongs to some non-degenerate connected submanifold then $f$ is a **Morse-Bott function**. 
-<!---
-and $S_i$ is non-degenerate connected submanifold in $S$. Let $p \in S_i$, then $T_p(M) = T_p(S_i) + N_p(S_i)$,
- where $T_p(M)$ is tangential space of $M$ and $N_p(S_i)$ is normal bundle of $S_i$.
-Then $f$ is a **Morse-Bott function**, if $H_pf(v) \neq 0$ where $\forall v \in N_p(S_i)$ i.e Hessian is non-degenerate in the normal direction (Equivalently, the kernel of the Hessian at a critical point equals the tangent space to the critical submanifold i.e $T_p(S_i) = Ker(H_pf)$). 
-A Morse function is a special case which has no kernel [^Wi2019].
--->
+
 
 ### Definition 5.1 ###
 
