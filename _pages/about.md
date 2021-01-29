@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a Doctorate student in Applied Mathematics under Department of Mathematics and Statistics at Washington State University. My advisor is Dr. Bala Krishnamoorthy. 
+I am a Doctorate student in Applied Mathematics under Department of Mathematics and Statistics at Washington State University. My Ph.D. advisor is Dr. Bala Krishnamoorthy. 
 I use mathematical techniques from combinatorial and computational topology, discrete optimization, computational complexity, graph theory, and computational geometry 
 for theoretical results and to design and implement efficient algorithms.
 One of the goal of my research is to characterize mathematical aspects of 3d printing / additive manufacturing and design effecient algorithms. 
