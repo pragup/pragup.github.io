@@ -11,7 +11,7 @@ I am a Doctorate student in Applied Mathematics under Department of Mathematics 
 I use mathematical techniques from combinatorial and computational topology, discrete optimization, computational complexity, graph theory, and computational geometry 
 for theoretical results and to design and implement efficient algorithms.
 One of the goal of my research is to characterize mathematical aspects of 3d printing / additive manufacturing and design effecient algorithms. 
-I also like distributed computing from algorithmic and programming prospective.  
+I also enjoy machine learning  and distributed computing from algorithmic and programming prospective.  
 
-It is a hobby for me to observe connection between objects.  
-“We all live in a world of multiscale, although things can be different in each scale but they are all connected in one way or another”.
+It is a hobby for me to observe connections between objects.  
+“We all live in a world of multi-scale, although things can be different in each scale but they are all connected in one way or another”.
