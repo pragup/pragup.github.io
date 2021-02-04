@@ -1,10 +1,10 @@
 ---
-title: "Continuous Toolpath Planning in Additive Manufacturing"
+title: "Continuous Toolpath Planning in a Graphical Framework for Sparse Infill Additive Manufacturing"
 collection: publications
 permalink: /publication/2019-08-22-Continuous-Toolpath-Planning-in-Additive-Manufacturing
 excerpt: 'In this paper we have developed a framework for layer by layer 3d printing, based on euler transformation approach, we developed in our previous work.'
 date: 2019-08-19
-venue: 'arXiv'
+venue: 'Computer-Aided Design, 2020'
 paperurl: 'https://arxiv.org/pdf/1908.07452.pdf'
 citation: 'Prashant Gupta, Bala Krishnamoorthy. (2019). &quot;Continuous Toolpath Planning in Additive Manufacturing.&quot; <i>arXiv</i>. 1(1)'
 ---
@@ -21,7 +21,7 @@ we clip $\hat{K}$ at each layer using its polygon to obtain $\tilde{K}$. We then
 edges in place of any segments left out to ensure there are no edges without support in the next layer above. These support edges maintain the Euler nature of $\tilde{K}$. Finally, we describe
 a tree-based search algorithm that builds the continuous tool path by traversing “concentric” cycles in the Euler complex. Our algorithm produces a tool path that avoids material collisions
 and crossovers, and can be printed in a continuous fashion irrespective of complex geometry or topology of the domain (e.g., holes).
-
+We presented this work in **Symposium on Solid and Physical Modeling, 2020**.  
 [Download paper here](https://arxiv.org/pdf/1908.07452.pdf)
 
-Recommended citation: Prashant Gupta, Bala Krishnamoorthy. (2018). "Continuous Toolpath Planning in Additive Manufacturing." <i>arXiv</i>. 1(1).
+Recommended citation: Prashant Gupta, Bala Krishnamoorthy. (2018). "Continuous Toolpath Planning in a Graphical Framework for Sparse Infill Additive Manufacturing." <i>https://doi.org/10.1016/j.cad.2020.102880</i>. 1(1).
