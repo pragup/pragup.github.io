@@ -6,7 +6,7 @@ excerpt: 'In this paper we have developed a framework for layer by layer 3d prin
 date: 2020-10-01
 venue: 'Computer-Aided Design'
 paperurl: 'https://doi.org/10.1016/j.cad.2020.102880'
-citation: 'Prashant Gupta, Bala Krishnamoorthy. (2020). &quot;Continuous Toolpath Planning in a Graphical Framework for Sparse Infill Additive Manufacturing.&quot; <i>Computer-Aided Design</i>. 1(1)'
+citation: 'Prashant Gupta, Bala Krishnamoorthy, Gregory Dreifus. (2020). &quot;Continuous Toolpath Planning in a Graphical Framework for Sparse Infill Additive Manufacturing.&quot; <i>Computer-Aided Design</i>. 1(1)'
 ---
 
 ![First Figure 1]( https://pragup.github.io/images/PyramidPlan.png )
