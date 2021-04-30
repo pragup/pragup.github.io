@@ -1,5 +1,5 @@
 ---
-title: 'Space Filling Curve Based Graph Partitioning approach for Lawn Mowing and 3D Printing Problems'
+title: 'Space Filling Curve Based Graph Partitioning Approach for Non-Metric Lawn Mowing And 3D Printing Problems'
 date: 2021-04-20
 permalink: /posts/2021/04/SFCDecomp/
 tags:
@@ -21,6 +21,8 @@ We formulated the 3d printing problem. The 3D printing problem is the same as th
 if 
 1. Turn cost is involved. Since the turn cost problem does not form a metric.
 2. Edge weight in the dual graph of $X$ is not a metric.
+
+
  
 ## Our Work ##
 
@@ -30,7 +32,6 @@ We may want to solve the exact problem using MIP. But MIPs are hard to solve for
 Hamiltonian path for each dual graph between entry and exit vertices.  
 3. We used MTZ formulation with turn cost to solve the Hamiltonian path problem for each dual graph.
 4. Connect these Hamiltonian paths between dual graphs based on the space-filling curve sequence. 
-
 We were able to solve problems with total $812,733$ nodes of a bunny over $360$ layers and $799,716$ nodes of buddha over $169$ layers. 
 For more details check out our work ??.  
 An illustration for a general polygon is shown below.
@@ -61,6 +62,7 @@ Images of tool path of some layers of the bunny.
 |:--:|
 |![Figure 11]( https://pragup.github.io/images/SFCDecomp_Figure_12.png)| 
 |:--:|  
+
 
 ## References ##
 
