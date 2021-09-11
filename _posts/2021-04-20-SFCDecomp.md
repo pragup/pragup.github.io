@@ -33,7 +33,7 @@ Hamiltonian path for each dual graph between entry and exit vertices.
 3. We used MTZ formulation with turn cost to solve the Hamiltonian path problem for each dual graph.
 4. Connect these Hamiltonian paths between dual graphs based on the space-filling curve sequence. 
 We were able to solve problems with total $812,733$ nodes of a bunny over $360$ layers and $799,716$ nodes of buddha over $169$ layers. 
-For more details check out our work (https://arxiv.org/pdf/1908.07452.pdf)
+For more details check out our work [https://arxiv.org/pdf/1908.07452.pdf]
 
 An illustration for a general polygon is shown below.
  
