@@ -38,35 +38,30 @@ For more details check out our work (https://arxiv.org/pdf/1908.07452.pdf)
 An illustration for a general polygon is shown below.
  
 |![Figure 1]( https://pragup.github.io/images/SFCDecomp_Figure_1.png)|
- 
 |:--:| 
-
 |![Figure 2]( https://pragup.github.io/images/SFCDecomp_Figure_2.png)| 
-
 |:--:|
-
 |![Figure 3]( https://pragup.github.io/images/SFCDecomp_Figure_3.png)| 
-
 |:--:|
-
 |![Figure 4]( https://pragup.github.io/images/SFCDecomp_Figure_4.png)| 
-
 |:--:|
-
 |![Figure 5]( https://pragup.github.io/images/SFCDecomp_Figure_5.png)| 
-
 |:--:|
-
 |![Figure 6]( https://pragup.github.io/images/SFCDecomp_Figure_6.png)| 
-
 |:--:|
 
 Images of some 3d printed layers of the bunny.
+
 |![Figure 7]( https://pragup.github.io/images/SFCDecomp_Figure_7.png)| 
+
 |:--:| 
+
 |![Figure 8]( https://pragup.github.io/images/SFCDecomp_Figure_9.png)| 
+
 |:--:|
+
 |![Figure 9]( https://pragup.github.io/images/SFCDecomp_Figure_10.png)| 
+
 |:--:|
 
 Images of tool path of some layers of the bunny. 
