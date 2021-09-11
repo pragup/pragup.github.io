@@ -52,25 +52,24 @@ An illustration for a general polygon is shown below.
 
 Images of some 3d printed layers of the bunny.
 
+|:--:|
 |![Figure 7]( https://pragup.github.io/images/SFCDecomp_Figure_7.png)| 
 
 |:--:| 
-
 |![Figure 8]( https://pragup.github.io/images/SFCDecomp_Figure_9.png)| 
 
 |:--:|
-
 |![Figure 9]( https://pragup.github.io/images/SFCDecomp_Figure_10.png)| 
 
-|:--:|
 
-Images of tool path of some layers of the bunny. 
+
+Images of tool path of some layers of the bunny.
+
+|:--:| 
 |![Figure 10]( https://pragup.github.io/images/SFCDecomp_Figure_8.png)|
  
 |:--:|
 |![Figure 11]( https://pragup.github.io/images/SFCDecomp_Figure_12.png)| 
-
-|:--:|  
 
 
 ## References ##
