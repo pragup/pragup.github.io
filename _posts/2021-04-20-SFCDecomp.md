@@ -65,9 +65,11 @@ Images of some 3d printed layers of the bunny.
 |:--:|
 
 Images of tool path of some layers of the bunny. 
-|![Figure 10]( https://pragup.github.io/images/SFCDecomp_Figure_8.png)| 
+|![Figure 10]( https://pragup.github.io/images/SFCDecomp_Figure_8.png)|
+ 
 |:--:|
 |![Figure 11]( https://pragup.github.io/images/SFCDecomp_Figure_12.png)| 
+
 |:--:|  
 
 
