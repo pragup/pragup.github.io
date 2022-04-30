@@ -15,7 +15,7 @@ development.
 In my doctoral program goal was to characterize mathematical aspects of 3d printing as combinatorial optimization / computational geometry problems and develop efficient
 algorithms with provable guarantees of performance and quality for *tool routing*. I have creatively used mathematical techniques from combinatorial and computational topology,
 discrete optimization, computational complexity, graph theory, and computational geometry for theoretical results and to design and implement algorithms that can lead to
-development of efficient *rule based AI techniques*.I have published articles in Symposium of Solid And Physical Model (SPM) and International Journal of Computational 
+development of efficient *rule based AI techniques*.I have published articles in Symposium of Solid And Physical Modeling (SPM) and International Journal of Computational 
 Geometry (IJCGA).
 
 I am currently looking for new opportunities. I enjoy designing algorithms for *NP-hard Problems including machine learning*.   
