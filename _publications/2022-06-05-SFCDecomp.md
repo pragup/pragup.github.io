@@ -8,7 +8,7 @@ venue: 'International Journal of Computational Geometry & Applications'
 paperurl: 'https://doi.org/10.1142/S0218195921500096'
 citation: 'Prashant Gupta, Yiran Guo, Narasimha Boddeti, Bala Krishnamoorthy. (2022). &quot;SFCDecomp: Multicriteria Optimized Tool Path Planning in 3D Printing using Space-Filling Curve Based Domain Decomposition.&quot; <i>International Journal of Computational Geometry & Applications</i>. 1(1)'
 ---
-![First Figure 1]( https://pragup.github.io/images/SFCDecomp_Figure_6.png )
+![First Figure 1]( https://pragup.github.io/images/SFCDecomp_Figure_5.png )
 ![First Figure 2]( https://pragup.github.io/images/SFCDecomp_Figure_7.png )
 
 We explore efficient optimization of toolpaths based on multiple criteria for large instances of 3d printing problems.
