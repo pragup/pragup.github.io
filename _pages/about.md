@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<p style='text-align: justify;'>  
+<style> 
 I have graduated with a Doctorate in Applied Mathematics in May 2021 focused on combinatorial optimization / computational geometry problems. My biggest strength is *my*
 *ability to formulate hard problems* with *simpler but effective solutions*. I have worked in AI startup as a **Machine Learning Research Scientist**. I have creatively used 
 mathematical tools to develop machine learning algorithms that are decentralized, computationally efficient, noise resilient, and low shot for in-house neuromorphic chip 
@@ -26,4 +26,4 @@ I enjoy developing mathematical algorithms. Currently interested in **discrete m
 
 It is a hobby for me to observe connections between objects.  
 “We all live in a world of multi-scale, although things can be different in each scale but they are all connected in one way or another”.
-</p>
+{text-align: justify}</style>
